@@ -1,10 +1,15 @@
 from typing import Dict
+import os
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
 
 class B365APIConfig:
     """Configuration for the B365 API"""
     
     BASE_URL = "https://api.b365api.com"
-    TOKEN = "180846-RVi16IBGld4Pvr"
+    TOKEN = os.getenv('B365_API_TOKEN', '180846-0nb22aL4DeG73U')
     
     @classmethod
     def get_base_url(cls) -> str:
