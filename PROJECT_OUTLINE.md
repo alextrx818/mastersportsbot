@@ -1,118 +1,86 @@
-# SportsBot Project Outline
+# Sports Monitoring Bot - Project Outline
 
-## Goals and Objectives
+## Project Overview
+A robust sports monitoring system that tracks live sports events, provides real-time updates, and manages data from multiple sports through the B365 API.
 
-1. **Live Sports Data Integration**
-   - Real-time data fetching (scores, stats, odds)
-   - Integration with SportsData.io or The Odds API
-   - 1-minute interval continuous monitoring
-   
-2. **Interactive Front-End**
-   - Real-time data display
-   - User-friendly interface
-   - Customizable dashboard views
+## Architecture
 
-3. **Alert System**
-   - Independent alert types per sport
-   - SMS notifications via Twilio
-   - Telegram bot integration
-   - Alert history tracking
+### 1. Infrastructure
+- **Deployment**: Digital Ocean Droplet
+- **Version Control**: GitHub with deploy key
+- **Development**: VSCode with SSH
+- **API**: FastAPI
+- **Logging**: Loguru with rotation
 
-4. **Pattern Analysis**
-   - Detect game patterns (leading underdogs, scoring streaks)
-   - Unusual betting odds detection
-   - Customizable analysis criteria
-   - Sports betting strategy insights
-
-## Project Structure
+### 2. Core Components
 ```
-sportsbot/
+/root/sportsbot/
 ├── src/
-│   ├── core/           # Core configuration and utilities
-│   │   ├── config.py   # Application configuration
-│   │   └── constants.py # System constants
-│   ├── models/         # Database models and schemas
-│   │   ├── alerts.py   # Alert models
-│   │   ├── games.py    # Game data models
-│   │   ├── patterns.py # Pattern analysis models
-│   │   └── users.py    # User preferences
-│   ├── services/       # Business logic and external services
-│   │   ├── sports_monitor.py    # Main monitoring service
-│   │   ├── sports_api.py        # Sports data API integration
-│   │   ├── notifications.py     # Notification handling
-│   │   ├── pattern_analyzer.py  # Pattern detection
-│   │   └── odds_analyzer.py     # Betting odds analysis
-│   ├── frontend/       # Frontend application
-│   │   ├── static/     # Static assets
-│   │   └── templates/  # HTML templates
-│   ├── api/           # API endpoints
-│   │   ├── alerts.py   # Alert management
-│   │   ├── games.py    # Game data
-│   │   └── analysis.py # Pattern analysis
-│   ├── main.py         # FastAPI application entry point
-│   └── test_api.py     # API tests
-├── config/             # Configuration files
-├── tests/              # Test suite
-├── .env.example        # Environment variables template
-├── Dockerfile          # Container definition
-├── docker-compose.yml  # Container orchestration
-└── requirements.txt    # Python dependencies
+│   ├── core/
+│   │   ├── api_client.py     # API interaction
+│   │   ├── api_config.py     # API configuration
+│   │   ├── auth.py          # Authentication
+│   │   ├── b365api.py       # B365 API client
+│   │   └── logging_config.py # Logging setup
+│   ├── sports_monitor.py    # Main monitoring
+│   └── tests/              # Test suite
+├── .env                    # Configuration
+└── requirements.txt        # Dependencies
 ```
 
-## Key Components
+### 3. Key Features
+1. **Live Monitoring**
+   - Real-time event tracking
+   - Period/score updates
+   - Multiple sports support
 
-### 1. Sports Monitor Service
-- Monitors live games across multiple sports leagues
-- 1-minute interval updates
-- Processes real-time game updates
-- Detects significant events
-- Manages game state in database
+2. **Data Processing**
+   - Sport-specific period tracking
+   - E-sports filtering
+   - Score change detection
 
-### 2. API Integration
-- Integrates with SportsData.io or The Odds API
-- Handles rate limiting and API quotas
-- Processes and normalizes sports data
-- Caches responses to minimize API usage
+3. **System Management**
+   - Graceful shutdown
+   - Error handling
+   - Automatic logging
+   - GitHub backups
 
-### 3. Pattern Analysis Engine
-- Identifies game patterns and trends
-- Analyzes betting odds movements
-- Supports custom analysis criteria
-- Generates betting strategy insights
+## Development Workflow
+1. Code development on VSCode
+2. Direct deployment to Digital Ocean
+3. Automatic backup to GitHub
+4. Continuous monitoring and logging
 
-### 4. Notification System
-- Supports multiple notification channels (Telegram, Twilio SMS)
-- Manages user subscriptions and preferences
-- Handles notification delivery and retries
-- Independent alert types per sport
+## Security
+- Environment variables for credentials
+- SSH key authentication
+- Deploy key for GitHub
+- Secure API token handling
 
-### 5. Frontend Interface
-- Real-time data visualization
-- Interactive dashboard
-- Alert configuration interface
-- Pattern analysis display
+## Monitoring Features
+- 15 supported sports
+- Custom period tracking per sport
+- Automatic updates every 60 seconds
+- Log rotation and management
 
-### 6. Database Schema
-- Games: Stores live and historical game data
-- Alerts: Tracks notification history and user preferences
-- Patterns: Stores detected patterns and analysis results
-- Users: User preferences and notification settings
+## Future Enhancements
+1. **API Extensions**
+   - Webhook support
+   - Custom endpoints
+   - Rate limiting
 
-## Required APIs and Services
-1. Sports Data API (SportsData.io or The Odds API)
-2. Twilio API for SMS
-3. Telegram Bot API
-4. PostgreSQL Database
-5. Redis for caching
+2. **Monitoring**
+   - Advanced filtering
+   - Custom alerts
+   - Statistics tracking
 
-## Environment Variables
-Required environment variables (see .env.example):
-- Database configuration
-- Sports API credentials
-- Twilio API credentials
-- Telegram Bot token
-- Monitoring intervals
-- Alert thresholds
+3. **Infrastructure**
+   - Load balancing
+   - Redundancy
+   - Scaling support
 
-## Deployment
-The application is containerized using Docker and can be deployed using docker-compose.
+## Maintenance
+- Daily log rotation
+- Automatic GitHub backups
+- Error monitoring
+- Performance tracking
