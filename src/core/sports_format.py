@@ -4,17 +4,47 @@ Each sport has its own format function that handles the specific display require
 """
 
 def format_soccer_match(match):
-    """Format soccer match with half information"""
+    """Format soccer match with half information and separate half scores"""
     home = match.get('home', {}).get('name', 'Unknown')
     away = match.get('away', {}).get('name', 'Unknown')
     score = match.get('ss', 'vs')
     timer = match.get('timer', {})
-    time = timer.get('tm', '0')
+    time = str(timer.get('tm', '0'))  # Convert to string
     
-    # Determine half
-    period = '1H' if int(time) <= 45 else '2H'
+    # Get scores for each half
+    scores = match.get('scores', {})
+    first_half = scores.get('1', {'home': '0', 'away': '0'})
+    second_half = scores.get('2', {'home': '0', 'away': '0'})
     
-    return f"⚽ {home} {score} {away}\n⏰ {time}' ({period})"
+    # Format half scores
+    first_half_score = f"{first_half.get('home', '0')}-{first_half.get('away', '0')}"
+    second_half_score = f"{second_half.get('home', '0')}-{second_half.get('away', '0')}"
+    
+    # Determine period based on time
+    is_second_half = False
+    if time == 'HT':
+        period = ''
+        time_display = 'HT'
+    else:
+        time_display = f"{time}'"
+        # Handle injury time (e.g., "45+2", "90+3")
+        base_time = time.split('+')[0] if '+' in time else time
+        try:
+            minutes = int(base_time)
+            is_second_half = minutes > 45
+            period = f"({['1H', '2H'][is_second_half]})"
+        except ValueError:
+            period = ''
+    
+    # Format the scores line based on period
+    scores_line = f"1H: {first_half_score}"
+    if is_second_half:
+        scores_line += f" | 2H: {second_half_score}"
+    
+    # Format the output
+    return (f"⚽ {home} {score} {away}\n"
+            f"{scores_line}\n"
+            f"⏰ {time_display}{' ' + period if period else ''}")
 
 def format_basketball_match(match):
     """Format basketball match with quarter-by-quarter scores"""
