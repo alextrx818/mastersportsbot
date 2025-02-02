@@ -1,0 +1,2691 @@
+{
+  "/v1/events/inplay?sport_id=1": {
+    "type": "object",
+    "properties": {
+      "success": {
+        "type": "int",
+        "example": 1
+      },
+      "pager": {
+        "type": "object",
+        "properties": {
+          "page": {
+            "type": "int",
+            "example": 1
+          },
+          "per_page": {
+            "type": "int",
+            "example": 1000
+          },
+          "total": {
+            "type": "int",
+            "example": 185
+          }
+        }
+      },
+      "results": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "str",
+              "example": "9458552"
+            },
+            "sport_id": {
+              "type": "str",
+              "example": "1"
+            },
+            "time": {
+              "type": "str",
+              "example": "1738507424"
+            },
+            "time_status": {
+              "type": "str",
+              "example": "1"
+            },
+            "league": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "str",
+                  "example": "96"
+                },
+                "name": {
+                  "type": "str",
+                  "example": "Cameroon Elite One"
+                },
+                "cc": {
+                  "type": "str",
+                  "example": "cm"
+                }
+              }
+            },
+            "home": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "str",
+                  "example": "82062"
+                },
+                "name": {
+                  "type": "str",
+                  "example": "Yong Sport Academy"
+                },
+                "image_id": {
+                  "type": "str",
+                  "example": "62234"
+                },
+                "cc": {
+                  "type": "str",
+                  "example": "cm"
+                }
+              }
+            },
+            "away": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "str",
+                  "example": "83690"
+                },
+                "name": {
+                  "type": "str",
+                  "example": "Colombe du Dja et Lobo"
+                },
+                "image_id": {
+                  "type": "str",
+                  "example": "317957"
+                },
+                "cc": {
+                  "type": "str",
+                  "example": "cm"
+                }
+              }
+            },
+            "ss": {
+              "type": "str",
+              "example": "1-1"
+            },
+            "scores": {
+              "type": "object",
+              "properties": {
+                "2": {
+                  "type": "object",
+                  "properties": {
+                    "home": {
+                      "type": "str",
+                      "example": "1"
+                    },
+                    "away": {
+                      "type": "str",
+                      "example": "1"
+                    }
+                  }
+                }
+              }
+            },
+            "extra": {
+              "type": "object",
+              "properties": {
+                "home_pos": {
+                  "type": "str",
+                  "example": "16"
+                },
+                "away_pos": {
+                  "type": "str",
+                  "example": "2"
+                },
+                "numberofperiods": {
+                  "type": "str",
+                  "example": "2"
+                },
+                "periodlength": {
+                  "type": "str",
+                  "example": "45"
+                },
+                "stadium_data": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "str",
+                      "example": "56152"
+                    },
+                    "name": {
+                      "type": "str",
+                      "example": "Bamenda Municipal Stadium"
+                    },
+                    "city": {
+                      "type": "str",
+                      "example": "Bamenda"
+                    },
+                    "country": {
+                      "type": "str",
+                      "example": "Cameroon"
+                    },
+                    "capacity": {
+                      "type": "str",
+                      "example": "5000"
+                    },
+                    "googlecoords": {
+                      "type": "str",
+                      "example": "5.956357, 10.149796"
+                    }
+                  }
+                },
+                "length": {
+                  "type": "int",
+                  "example": 90
+                },
+                "round": {
+                  "type": "str",
+                  "example": "10"
+                }
+              }
+            },
+            "bet365_id": {
+              "type": "str",
+              "example": "169098450"
+            },
+            "timer": {
+              "type": "object",
+              "properties": {
+                "tm": {
+                  "type": "int",
+                  "example": 94
+                },
+                "ts": {
+                  "type": "int",
+                  "example": 28
+                },
+                "tt": {
+                  "type": "str",
+                  "example": "1"
+                },
+                "ta": {
+                  "type": "int",
+                  "example": 3
+                },
+                "md": {
+                  "type": "int",
+                  "example": 1
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "/v1/events/inplay?sport_id=18": {
+    "type": "object",
+    "properties": {
+      "success": {
+        "type": "int",
+        "example": 1
+      },
+      "pager": {
+        "type": "object",
+        "properties": {
+          "page": {
+            "type": "int",
+            "example": 1
+          },
+          "per_page": {
+            "type": "int",
+            "example": 1000
+          },
+          "total": {
+            "type": "int",
+            "example": 61
+          }
+        }
+      },
+      "results": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "str",
+              "example": "8886446"
+            },
+            "sport_id": {
+              "type": "str",
+              "example": "18"
+            },
+            "time": {
+              "type": "str",
+              "example": "1738507253"
+            },
+            "time_status": {
+              "type": "str",
+              "example": "1"
+            },
+            "league": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "str",
+                  "example": "1287"
+                },
+                "name": {
+                  "type": "str",
+                  "example": "Lithuania LKL"
+                },
+                "cc": {
+                  "type": "str",
+                  "example": "lt"
+                }
+              }
+            },
+            "home": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "str",
+                  "example": "45051"
+                },
+                "name": {
+                  "type": "str",
+                  "example": "Zalgiris"
+                },
+                "image_id": {
+                  "type": "str",
+                  "example": "6662"
+                },
+                "cc": {
+                  "type": "str",
+                  "example": "lt"
+                }
+              }
+            },
+            "away": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "str",
+                  "example": "759970"
+                },
+                "name": {
+                  "type": "str",
+                  "example": "Wolves"
+                },
+                "image_id": {
+                  "type": "str",
+                  "example": "923425"
+                },
+                "cc": {
+                  "type": "str",
+                  "example": "lt"
+                }
+              }
+            },
+            "ss": {
+              "type": "str",
+              "example": "90-72"
+            },
+            "timer": {
+              "type": "object",
+              "properties": {
+                "tm": {
+                  "type": "str",
+                  "example": "5"
+                },
+                "ts": {
+                  "type": "str",
+                  "example": "48"
+                },
+                "q": {
+                  "type": "str",
+                  "example": "4"
+                },
+                "tt": {
+                  "type": "str",
+                  "example": "0"
+                }
+              }
+            },
+            "scores": {
+              "type": "object",
+              "properties": {
+                "1": {
+                  "type": "object",
+                  "properties": {
+                    "home": {
+                      "type": "str",
+                      "example": "28"
+                    },
+                    "away": {
+                      "type": "str",
+                      "example": "29"
+                    }
+                  }
+                },
+                "2": {
+                  "type": "object",
+                  "properties": {
+                    "home": {
+                      "type": "str",
+                      "example": "36"
+                    },
+                    "away": {
+                      "type": "str",
+                      "example": "16"
+                    }
+                  }
+                },
+                "3": {
+                  "type": "object",
+                  "properties": {
+                    "home": {
+                      "type": "str",
+                      "example": "64"
+                    },
+                    "away": {
+                      "type": "str",
+                      "example": "45"
+                    }
+                  }
+                },
+                "4": {
+                  "type": "object",
+                  "properties": {
+                    "home": {
+                      "type": "str",
+                      "example": "20"
+                    },
+                    "away": {
+                      "type": "str",
+                      "example": "17"
+                    }
+                  }
+                },
+                "5": {
+                  "type": "object",
+                  "properties": {
+                    "home": {
+                      "type": "str",
+                      "example": "6"
+                    },
+                    "away": {
+                      "type": "str",
+                      "example": "10"
+                    }
+                  }
+                },
+                "7": {
+                  "type": "object",
+                  "properties": {
+                    "home": {
+                      "type": "str",
+                      "example": "90"
+                    },
+                    "away": {
+                      "type": "str",
+                      "example": "72"
+                    }
+                  }
+                }
+              }
+            },
+            "bet365_id": {
+              "type": "str",
+              "example": "168541921"
+            }
+          }
+        }
+      }
+    }
+  },
+  "/v1/events/inplay?sport_id=91": {
+    "type": "object",
+    "properties": {
+      "success": {
+        "type": "int",
+        "example": 1
+      },
+      "pager": {
+        "type": "object",
+        "properties": {
+          "page": {
+            "type": "int",
+            "example": 1
+          },
+          "per_page": {
+            "type": "int",
+            "example": 1000
+          },
+          "total": {
+            "type": "int",
+            "example": 33
+          }
+        }
+      },
+      "results": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "str",
+              "example": "8710747"
+            },
+            "sport_id": {
+              "type": "str",
+              "example": "91"
+            },
+            "time": {
+              "type": "str",
+              "example": "1738504800"
+            },
+            "time_status": {
+              "type": "str",
+              "example": "1"
+            },
+            "league": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "str",
+                  "example": "2161"
+                },
+                "name": {
+                  "type": "str",
+                  "example": "Greece A1 Women"
+                },
+                "cc": {
+                  "type": "str",
+                  "example": "gr"
+                }
+              }
+            },
+            "home": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "str",
+                  "example": "64139"
+                },
+                "name": {
+                  "type": "str",
+                  "example": "PAOK Women"
+                },
+                "image_id": {
+                  "type": "str",
+                  "example": "288819"
+                },
+                "cc": {
+                  "type": "str",
+                  "example": "gr"
+                }
+              }
+            },
+            "away": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "str",
+                  "example": "65520"
+                },
+                "name": {
+                  "type": "str",
+                  "example": "Panionios Women"
+                },
+                "image_id": {
+                  "type": "str",
+                  "example": "342898"
+                },
+                "cc": {
+                  "type": "str",
+                  "example": "gr"
+                }
+              }
+            },
+            "ss": {
+              "type": "str",
+              "example": "16-15"
+            },
+            "scores": {
+              "type": "object",
+              "properties": {
+                "1": {
+                  "type": "object",
+                  "properties": {
+                    "home": {
+                      "type": "str",
+                      "example": "25"
+                    },
+                    "away": {
+                      "type": "str",
+                      "example": "21"
+                    }
+                  }
+                },
+                "2": {
+                  "type": "object",
+                  "properties": {
+                    "home": {
+                      "type": "str",
+                      "example": "25"
+                    },
+                    "away": {
+                      "type": "str",
+                      "example": "21"
+                    }
+                  }
+                },
+                "3": {
+                  "type": "object",
+                  "properties": {
+                    "home": {
+                      "type": "str",
+                      "example": "18"
+                    },
+                    "away": {
+                      "type": "str",
+                      "example": "25"
+                    }
+                  }
+                },
+                "4": {
+                  "type": "object",
+                  "properties": {
+                    "home": {
+                      "type": "str",
+                      "example": "22"
+                    },
+                    "away": {
+                      "type": "str",
+                      "example": "25"
+                    }
+                  }
+                },
+                "5": {
+                  "type": "object",
+                  "properties": {
+                    "home": {
+                      "type": "str",
+                      "example": "15"
+                    },
+                    "away": {
+                      "type": "str",
+                      "example": "15"
+                    }
+                  }
+                }
+              }
+            },
+            "bet365_id": {
+              "type": "str",
+              "example": "168536518"
+            }
+          }
+        }
+      }
+    }
+  },
+  "/v1/events/inplay?sport_id=78": {
+    "type": "object",
+    "properties": {
+      "success": {
+        "type": "int",
+        "example": 1
+      },
+      "pager": {
+        "type": "object",
+        "properties": {
+          "page": {
+            "type": "int",
+            "example": 1
+          },
+          "per_page": {
+            "type": "int",
+            "example": 1000
+          },
+          "total": {
+            "type": "int",
+            "example": 4
+          }
+        }
+      },
+      "results": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "str",
+              "example": "8417755"
+            },
+            "sport_id": {
+              "type": "str",
+              "example": "78"
+            },
+            "time": {
+              "type": "str",
+              "example": "1738510200"
+            },
+            "time_status": {
+              "type": "str",
+              "example": "1"
+            },
+            "league": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "str",
+                  "example": "862"
+                },
+                "name": {
+                  "type": "str",
+                  "example": "Romania Liga Nationala Women"
+                },
+                "cc": {
+                  "type": "str",
+                  "example": "ro"
+                }
+              }
+            },
+            "home": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "str",
+                  "example": "48875"
+                },
+                "name": {
+                  "type": "str",
+                  "example": "ASC Corona Brasov Women"
+                },
+                "image_id": {
+                  "type": "str",
+                  "example": "6803"
+                },
+                "cc": {
+                  "type": "str",
+                  "example": "ro"
+                }
+              }
+            },
+            "o_home": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "str",
+                  "example": "907887"
+                },
+                "name": {
+                  "type": "str",
+                  "example": "Corona Brasov Women"
+                },
+                "image_id": {
+                  "type": "str",
+                  "example": "6803"
+                },
+                "cc": {
+                  "type": "NoneType",
+                  "example": null
+                }
+              }
+            },
+            "away": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "str",
+                  "example": "47390"
+                },
+                "name": {
+                  "type": "str",
+                  "example": "HC Dunarea Braila Women"
+                },
+                "image_id": {
+                  "type": "str",
+                  "example": "21951"
+                },
+                "cc": {
+                  "type": "str",
+                  "example": "ro"
+                }
+              }
+            },
+            "ss": {
+              "type": "str",
+              "example": "27-25"
+            },
+            "timer": {
+              "type": "object",
+              "properties": {
+                "tm": {
+                  "type": "str",
+                  "example": "49"
+                },
+                "ts": {
+                  "type": "str",
+                  "example": "7"
+                },
+                "tt": {
+                  "type": "str",
+                  "example": "1"
+                }
+              }
+            },
+            "scores": {
+              "type": "object",
+              "properties": {
+                "1": {
+                  "type": "object",
+                  "properties": {
+                    "home": {
+                      "type": "str",
+                      "example": "17"
+                    },
+                    "away": {
+                      "type": "str",
+                      "example": "13"
+                    }
+                  }
+                },
+                "2": {
+                  "type": "object",
+                  "properties": {
+                    "home": {
+                      "type": "str",
+                      "example": "10"
+                    },
+                    "away": {
+                      "type": "str",
+                      "example": "12"
+                    }
+                  }
+                },
+                "4": {
+                  "type": "object",
+                  "properties": {
+                    "home": {
+                      "type": "str",
+                      "example": "27"
+                    },
+                    "away": {
+                      "type": "str",
+                      "example": "25"
+                    }
+                  }
+                }
+              }
+            },
+            "bet365_id": {
+              "type": "str",
+              "example": "168539154"
+            }
+          }
+        }
+      }
+    }
+  },
+  "/v1/events/inplay?sport_id=16": {
+    "type": "object",
+    "properties": {
+      "success": {
+        "type": "int",
+        "example": 1
+      },
+      "pager": {
+        "type": "object",
+        "properties": {
+          "page": {
+            "type": "int",
+            "example": 1
+          },
+          "per_page": {
+            "type": "int",
+            "example": 1000
+          },
+          "total": {
+            "type": "int",
+            "example": 0
+          }
+        }
+      },
+      "results": {
+        "type": "array",
+        "items": {
+          "type": "object"
+        }
+      }
+    }
+  },
+  "/v1/events/inplay?sport_id=17": {
+    "type": "object",
+    "properties": {
+      "success": {
+        "type": "int",
+        "example": 1
+      },
+      "pager": {
+        "type": "object",
+        "properties": {
+          "page": {
+            "type": "int",
+            "example": 1
+          },
+          "per_page": {
+            "type": "int",
+            "example": 1000
+          },
+          "total": {
+            "type": "int",
+            "example": 38
+          }
+        }
+      },
+      "results": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "str",
+              "example": "8982793"
+            },
+            "sport_id": {
+              "type": "str",
+              "example": "17"
+            },
+            "time": {
+              "type": "str",
+              "example": "1738506600"
+            },
+            "time_status": {
+              "type": "str",
+              "example": "1"
+            },
+            "league": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "str",
+                  "example": "39192"
+                },
+                "name": {
+                  "type": "str",
+                  "example": "Czechia Extraliga"
+                },
+                "cc": {
+                  "type": "str",
+                  "example": "cz"
+                }
+              }
+            },
+            "home": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "str",
+                  "example": "4344"
+                },
+                "name": {
+                  "type": "str",
+                  "example": "Litvinov"
+                },
+                "image_id": {
+                  "type": "str",
+                  "example": "3865"
+                },
+                "cc": {
+                  "type": "str",
+                  "example": "cz"
+                }
+              }
+            },
+            "away": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "str",
+                  "example": "4971"
+                },
+                "name": {
+                  "type": "str",
+                  "example": "Liberec"
+                },
+                "image_id": {
+                  "type": "str",
+                  "example": "3879"
+                },
+                "cc": {
+                  "type": "str",
+                  "example": "cz"
+                }
+              }
+            },
+            "ss": {
+              "type": "str",
+              "example": "3-2"
+            },
+            "timer": {
+              "type": "object",
+              "properties": {
+                "tm": {
+                  "type": "int",
+                  "example": 11
+                },
+                "ts": {
+                  "type": "int",
+                  "example": 0
+                },
+                "q": {
+                  "type": "str",
+                  "example": "3"
+                }
+              }
+            },
+            "scores": {
+              "type": "object",
+              "properties": {
+                "1": {
+                  "type": "object",
+                  "properties": {
+                    "home": {
+                      "type": "str",
+                      "example": "0"
+                    },
+                    "away": {
+                      "type": "str",
+                      "example": "0"
+                    }
+                  }
+                },
+                "2": {
+                  "type": "object",
+                  "properties": {
+                    "home": {
+                      "type": "str",
+                      "example": "2"
+                    },
+                    "away": {
+                      "type": "str",
+                      "example": "1"
+                    }
+                  }
+                },
+                "3": {
+                  "type": "object",
+                  "properties": {
+                    "home": {
+                      "type": "str",
+                      "example": "1"
+                    },
+                    "away": {
+                      "type": "str",
+                      "example": "1"
+                    }
+                  }
+                },
+                "5": {
+                  "type": "object",
+                  "properties": {
+                    "home": {
+                      "type": "str",
+                      "example": "3"
+                    },
+                    "away": {
+                      "type": "str",
+                      "example": "2"
+                    }
+                  }
+                }
+              }
+            },
+            "bet365_id": {
+              "type": "str",
+              "example": "168538013"
+            }
+          }
+        }
+      }
+    }
+  },
+  "/v1/events/inplay?sport_id=13": {
+    "type": "object",
+    "properties": {
+      "success": {
+        "type": "int",
+        "example": 1
+      },
+      "pager": {
+        "type": "object",
+        "properties": {
+          "page": {
+            "type": "int",
+            "example": 1
+          },
+          "per_page": {
+            "type": "int",
+            "example": 1000
+          },
+          "total": {
+            "type": "int",
+            "example": 17
+          }
+        }
+      },
+      "results": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "str",
+              "example": "9462323"
+            },
+            "sport_id": {
+              "type": "str",
+              "example": "13"
+            },
+            "time": {
+              "type": "str",
+              "example": "1738504800"
+            },
+            "time_status": {
+              "type": "str",
+              "example": "1"
+            },
+            "league": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "str",
+                  "example": "32264"
+                },
+                "name": {
+                  "type": "str",
+                  "example": "Challenger Piracicaba"
+                },
+                "cc": {
+                  "type": "NoneType",
+                  "example": null
+                }
+              }
+            },
+            "home": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "str",
+                  "example": "970203"
+                },
+                "name": {
+                  "type": "str",
+                  "example": "Roman Andres Burruchaga"
+                },
+                "image_id": {
+                  "type": "int",
+                  "example": 0
+                },
+                "cc": {
+                  "type": "str",
+                  "example": "ar"
+                }
+              }
+            },
+            "away": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "str",
+                  "example": "247920"
+                },
+                "name": {
+                  "type": "str",
+                  "example": "Gustavo Heide"
+                },
+                "image_id": {
+                  "type": "int",
+                  "example": 0
+                },
+                "cc": {
+                  "type": "str",
+                  "example": "br"
+                }
+              }
+            },
+            "ss": {
+              "type": "str",
+              "example": "7-5,3-6,4-3"
+            },
+            "points": {
+              "type": "str",
+              "example": "30-0"
+            },
+            "playing_indicator": {
+              "type": "str",
+              "example": "1,0"
+            },
+            "scores": {
+              "type": "object",
+              "properties": {
+                "1": {
+                  "type": "object",
+                  "properties": {
+                    "home": {
+                      "type": "str",
+                      "example": "7"
+                    },
+                    "away": {
+                      "type": "str",
+                      "example": "5"
+                    }
+                  }
+                },
+                "2": {
+                  "type": "object",
+                  "properties": {
+                    "home": {
+                      "type": "str",
+                      "example": "3"
+                    },
+                    "away": {
+                      "type": "str",
+                      "example": "6"
+                    }
+                  }
+                },
+                "3": {
+                  "type": "object",
+                  "properties": {
+                    "home": {
+                      "type": "str",
+                      "example": "4"
+                    },
+                    "away": {
+                      "type": "str",
+                      "example": "3"
+                    }
+                  }
+                }
+              }
+            },
+            "bet365_id": {
+              "type": "str",
+              "example": "169194144"
+            }
+          }
+        }
+      }
+    }
+  },
+  "/v1/events/inplay?sport_id=14": {
+    "type": "object",
+    "properties": {
+      "success": {
+        "type": "int",
+        "example": 1
+      },
+      "pager": {
+        "type": "object",
+        "properties": {
+          "page": {
+            "type": "int",
+            "example": 1
+          },
+          "per_page": {
+            "type": "int",
+            "example": 1000
+          },
+          "total": {
+            "type": "int",
+            "example": 1
+          }
+        }
+      },
+      "results": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "str",
+              "example": "9462249"
+            },
+            "sport_id": {
+              "type": "str",
+              "example": "14"
+            },
+            "time": {
+              "type": "str",
+              "example": "1738501200"
+            },
+            "time_status": {
+              "type": "str",
+              "example": "1"
+            },
+            "league": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "str",
+                  "example": "39551"
+                },
+                "name": {
+                  "type": "str",
+                  "example": "German Masters 2025"
+                },
+                "cc": {
+                  "type": "NoneType",
+                  "example": null
+                }
+              }
+            },
+            "home": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "str",
+                  "example": "48691"
+                },
+                "name": {
+                  "type": "str",
+                  "example": "Barry Hawkins"
+                },
+                "image_id": {
+                  "type": "str",
+                  "example": "22447"
+                },
+                "cc": {
+                  "type": "NoneType",
+                  "example": null
+                }
+              }
+            },
+            "away": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "str",
+                  "example": "48025"
+                },
+                "name": {
+                  "type": "str",
+                  "example": "Kyren Wilson"
+                },
+                "image_id": {
+                  "type": "str",
+                  "example": "120814"
+                },
+                "cc": {
+                  "type": "NoneType",
+                  "example": null
+                }
+              }
+            },
+            "ss": {
+              "type": "str",
+              "example": "5-4"
+            },
+            "scores": {
+              "type": "object",
+              "properties": {
+                "ft": {
+                  "type": "object",
+                  "properties": {
+                    "home": {
+                      "type": "str",
+                      "example": "5"
+                    },
+                    "away": {
+                      "type": "str",
+                      "example": "4"
+                    }
+                  }
+                }
+              }
+            },
+            "bet365_id": {
+              "type": "str",
+              "example": "169196356"
+            }
+          }
+        }
+      }
+    }
+  },
+  "/v1/events/inplay?sport_id=12": {
+    "type": "object",
+    "properties": {
+      "success": {
+        "type": "int",
+        "example": 1
+      },
+      "pager": {
+        "type": "object",
+        "properties": {
+          "page": {
+            "type": "int",
+            "example": 1
+          },
+          "per_page": {
+            "type": "int",
+            "example": 1000
+          },
+          "total": {
+            "type": "int",
+            "example": 0
+          }
+        }
+      },
+      "results": {
+        "type": "array",
+        "items": {
+          "type": "object"
+        }
+      }
+    }
+  },
+  "/v1/events/inplay?sport_id=3": {
+    "type": "object",
+    "properties": {
+      "success": {
+        "type": "int",
+        "example": 1
+      },
+      "pager": {
+        "type": "object",
+        "properties": {
+          "page": {
+            "type": "int",
+            "example": 1
+          },
+          "per_page": {
+            "type": "int",
+            "example": 1000
+          },
+          "total": {
+            "type": "int",
+            "example": 2
+          }
+        }
+      },
+      "results": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "str",
+              "example": "9464303"
+            },
+            "sport_id": {
+              "type": "str",
+              "example": "3"
+            },
+            "time": {
+              "type": "str",
+              "example": "1738502782"
+            },
+            "time_status": {
+              "type": "str",
+              "example": "1"
+            },
+            "league": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "str",
+                  "example": "39602"
+                },
+                "name": {
+                  "type": "str",
+                  "example": "ECN T20"
+                },
+                "cc": {
+                  "type": "NoneType",
+                  "example": null
+                }
+              }
+            },
+            "home": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "str",
+                  "example": "574711"
+                },
+                "name": {
+                  "type": "str",
+                  "example": "Portugal"
+                },
+                "image_id": {
+                  "type": "str",
+                  "example": "832518"
+                },
+                "cc": {
+                  "type": "str",
+                  "example": "pt"
+                }
+              }
+            },
+            "away": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "str",
+                  "example": "327627"
+                },
+                "name": {
+                  "type": "str",
+                  "example": "Spain"
+                },
+                "image_id": {
+                  "type": "str",
+                  "example": "686079"
+                },
+                "cc": {
+                  "type": "str",
+                  "example": "es"
+                }
+              }
+            },
+            "ss": {
+              "type": "str",
+              "example": "175/6,122/8"
+            },
+            "bet365_id": {
+              "type": "str",
+              "example": "169226373"
+            }
+          }
+        }
+      }
+    }
+  },
+  "/v1/events/upcoming?sport_id=1": {
+    "type": "object",
+    "properties": {
+      "success": {
+        "type": "int",
+        "example": 1
+      },
+      "pager": {
+        "type": "object",
+        "properties": {
+          "page": {
+            "type": "int",
+            "example": 1
+          },
+          "per_page": {
+            "type": "int",
+            "example": 50
+          },
+          "total": {
+            "type": "int",
+            "example": 44959
+          }
+        }
+      },
+      "results": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "str",
+              "example": "9464945"
+            },
+            "sport_id": {
+              "type": "str",
+              "example": "1"
+            },
+            "time": {
+              "type": "str",
+              "example": "1738508400"
+            },
+            "time_status": {
+              "type": "str",
+              "example": "0"
+            },
+            "league": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "str",
+                  "example": "35378"
+                },
+                "name": {
+                  "type": "str",
+                  "example": "Ghana Premier League Women"
+                },
+                "cc": {
+                  "type": "str",
+                  "example": "gh"
+                }
+              }
+            },
+            "home": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "str",
+                  "example": "1095580"
+                },
+                "name": {
+                  "type": "str",
+                  "example": "Supreme Ladies FC Women"
+                },
+                "image_id": {
+                  "type": "str",
+                  "example": "1188419"
+                },
+                "cc": {
+                  "type": "str",
+                  "example": "gh"
+                }
+              }
+            },
+            "away": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "str",
+                  "example": "1074747"
+                },
+                "name": {
+                  "type": "str",
+                  "example": "Kumasi Sports Academy Women"
+                },
+                "image_id": {
+                  "type": "str",
+                  "example": "1199413"
+                },
+                "cc": {
+                  "type": "str",
+                  "example": "gh"
+                }
+              }
+            },
+            "ss": {
+              "type": "NoneType",
+              "example": null
+            }
+          }
+        }
+      }
+    }
+  },
+  "/v1/events/upcoming?sport_id=18": {
+    "type": "object",
+    "properties": {
+      "success": {
+        "type": "int",
+        "example": 1
+      },
+      "pager": {
+        "type": "object",
+        "properties": {
+          "page": {
+            "type": "int",
+            "example": 1
+          },
+          "per_page": {
+            "type": "int",
+            "example": 50
+          },
+          "total": {
+            "type": "int",
+            "example": 12245
+          }
+        }
+      },
+      "results": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "str",
+              "example": "9461257"
+            },
+            "sport_id": {
+              "type": "str",
+              "example": "18"
+            },
+            "time": {
+              "type": "str",
+              "example": "1738512000"
+            },
+            "time_status": {
+              "type": "str",
+              "example": "0"
+            },
+            "league": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "str",
+                  "example": "2780"
+                },
+                "name": {
+                  "type": "str",
+                  "example": "Romania Liga 1"
+                },
+                "cc": {
+                  "type": "str",
+                  "example": "ro"
+                }
+              }
+            },
+            "home": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "str",
+                  "example": "238630"
+                },
+                "name": {
+                  "type": "str",
+                  "example": "Agronomia Bucuresti"
+                },
+                "image_id": {
+                  "type": "str",
+                  "example": "509518"
+                },
+                "cc": {
+                  "type": "str",
+                  "example": "ro"
+                }
+              }
+            },
+            "away": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "str",
+                  "example": "776672"
+                },
+                "name": {
+                  "type": "str",
+                  "example": "CS Universitar Ploiesti"
+                },
+                "image_id": {
+                  "type": "str",
+                  "example": "953885"
+                },
+                "cc": {
+                  "type": "str",
+                  "example": "ro"
+                }
+              }
+            },
+            "ss": {
+              "type": "NoneType",
+              "example": null
+            }
+          }
+        }
+      }
+    }
+  },
+  "/v1/events/upcoming?sport_id=91": {
+    "type": "object",
+    "properties": {
+      "success": {
+        "type": "int",
+        "example": 1
+      },
+      "pager": {
+        "type": "object",
+        "properties": {
+          "page": {
+            "type": "int",
+            "example": 1
+          },
+          "per_page": {
+            "type": "int",
+            "example": 50
+          },
+          "total": {
+            "type": "int",
+            "example": 3200
+          }
+        }
+      },
+      "results": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "str",
+              "example": "8607804"
+            },
+            "sport_id": {
+              "type": "str",
+              "example": "91"
+            },
+            "time": {
+              "type": "str",
+              "example": "1738512000"
+            },
+            "time_status": {
+              "type": "str",
+              "example": "0"
+            },
+            "league": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "str",
+                  "example": "1801"
+                },
+                "name": {
+                  "type": "str",
+                  "example": "Italy A2"
+                },
+                "cc": {
+                  "type": "str",
+                  "example": "it"
+                }
+              }
+            },
+            "home": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "str",
+                  "example": "242271"
+                },
+                "name": {
+                  "type": "str",
+                  "example": "TGW Pordenone"
+                },
+                "image_id": {
+                  "type": "str",
+                  "example": "466839"
+                },
+                "cc": {
+                  "type": "str",
+                  "example": "it"
+                }
+              }
+            },
+            "o_home": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "str",
+                  "example": "258337"
+                },
+                "name": {
+                  "type": "str",
+                  "example": "Pordenone"
+                },
+                "image_id": {
+                  "type": "str",
+                  "example": "466839"
+                },
+                "cc": {
+                  "type": "str",
+                  "example": "it"
+                }
+              }
+            },
+            "away": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "str",
+                  "example": "366815"
+                },
+                "name": {
+                  "type": "str",
+                  "example": "Volley Pineto"
+                },
+                "image_id": {
+                  "type": "str",
+                  "example": "533517"
+                },
+                "cc": {
+                  "type": "str",
+                  "example": "it"
+                }
+              }
+            },
+            "o_away": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "str",
+                  "example": "653089"
+                },
+                "name": {
+                  "type": "str",
+                  "example": "Abba Pineto"
+                },
+                "image_id": {
+                  "type": "str",
+                  "example": "533517"
+                },
+                "cc": {
+                  "type": "NoneType",
+                  "example": null
+                }
+              }
+            },
+            "ss": {
+              "type": "NoneType",
+              "example": null
+            },
+            "bet365_id": {
+              "type": "str",
+              "example": "168537943"
+            }
+          }
+        }
+      }
+    }
+  },
+  "/v1/events/upcoming?sport_id=78": {
+    "type": "object",
+    "properties": {
+      "success": {
+        "type": "int",
+        "example": 1
+      },
+      "pager": {
+        "type": "object",
+        "properties": {
+          "page": {
+            "type": "int",
+            "example": 1
+          },
+          "per_page": {
+            "type": "int",
+            "example": 50
+          },
+          "total": {
+            "type": "int",
+            "example": 3855
+          }
+        }
+      },
+      "results": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "str",
+              "example": "9464900"
+            },
+            "sport_id": {
+              "type": "str",
+              "example": "78"
+            },
+            "time": {
+              "type": "str",
+              "example": "1738509300"
+            },
+            "time_status": {
+              "type": "str",
+              "example": "0"
+            },
+            "league": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "str",
+                  "example": "37407"
+                },
+                "name": {
+                  "type": "str",
+                  "example": "Brazil Camp. Alagoano Women"
+                },
+                "cc": {
+                  "type": "str",
+                  "example": "br"
+                }
+              }
+            },
+            "home": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "str",
+                  "example": "1073811"
+                },
+                "name": {
+                  "type": "str",
+                  "example": "Atletico Regatas Women"
+                },
+                "image_id": {
+                  "type": "str",
+                  "example": "1210513"
+                },
+                "cc": {
+                  "type": "str",
+                  "example": "br"
+                }
+              }
+            },
+            "away": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "str",
+                  "example": "1033179"
+                },
+                "name": {
+                  "type": "str",
+                  "example": "Imperio AL Women"
+                },
+                "image_id": {
+                  "type": "str",
+                  "example": "1142837"
+                },
+                "cc": {
+                  "type": "str",
+                  "example": "br"
+                }
+              }
+            },
+            "ss": {
+              "type": "NoneType",
+              "example": null
+            }
+          }
+        }
+      }
+    }
+  },
+  "/v1/events/upcoming?sport_id=16": {
+    "type": "object",
+    "properties": {
+      "success": {
+        "type": "int",
+        "example": 1
+      },
+      "pager": {
+        "type": "object",
+        "properties": {
+          "page": {
+            "type": "int",
+            "example": 1
+          },
+          "per_page": {
+            "type": "int",
+            "example": 50
+          },
+          "total": {
+            "type": "int",
+            "example": 484
+          }
+        }
+      },
+      "results": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "str",
+              "example": "9463845"
+            },
+            "sport_id": {
+              "type": "str",
+              "example": "16"
+            },
+            "time": {
+              "type": "str",
+              "example": "1738529400"
+            },
+            "time_status": {
+              "type": "str",
+              "example": "0"
+            },
+            "league": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "str",
+                  "example": "8616"
+                },
+                "name": {
+                  "type": "str",
+                  "example": "Serie del Caribe"
+                },
+                "cc": {
+                  "type": "NoneType",
+                  "example": null
+                }
+              }
+            },
+            "home": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "str",
+                  "example": "84815"
+                },
+                "name": {
+                  "type": "str",
+                  "example": "Japan"
+                },
+                "image_id": {
+                  "type": "str",
+                  "example": "34416"
+                },
+                "cc": {
+                  "type": "str",
+                  "example": "jp"
+                }
+              }
+            },
+            "away": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "str",
+                  "example": "85424"
+                },
+                "name": {
+                  "type": "str",
+                  "example": "Puerto Rico"
+                },
+                "image_id": {
+                  "type": "str",
+                  "example": "34391"
+                },
+                "cc": {
+                  "type": "str",
+                  "example": "pr"
+                }
+              }
+            },
+            "ss": {
+              "type": "NoneType",
+              "example": null
+            },
+            "bet365_id": {
+              "type": "str",
+              "example": "169134037"
+            }
+          }
+        }
+      }
+    }
+  },
+  "/v1/events/upcoming?sport_id=17": {
+    "type": "object",
+    "properties": {
+      "success": {
+        "type": "int",
+        "example": 1
+      },
+      "pager": {
+        "type": "object",
+        "properties": {
+          "page": {
+            "type": "int",
+            "example": 1
+          },
+          "per_page": {
+            "type": "int",
+            "example": 50
+          },
+          "total": {
+            "type": "int",
+            "example": 4823
+          }
+        }
+      },
+      "results": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "str",
+              "example": "8644458"
+            },
+            "sport_id": {
+              "type": "str",
+              "example": "17"
+            },
+            "time": {
+              "type": "str",
+              "example": "1738512000"
+            },
+            "time_status": {
+              "type": "str",
+              "example": "0"
+            },
+            "league": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "str",
+                  "example": "29232"
+                },
+                "name": {
+                  "type": "str",
+                  "example": "Germany Oberliga"
+                },
+                "cc": {
+                  "type": "str",
+                  "example": "de"
+                }
+              }
+            },
+            "home": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "str",
+                  "example": "1065931"
+                },
+                "name": {
+                  "type": "str",
+                  "example": "EV Fussen"
+                },
+                "image_id": {
+                  "type": "str",
+                  "example": "24234"
+                },
+                "cc": {
+                  "type": "str",
+                  "example": "de"
+                }
+              }
+            },
+            "away": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "str",
+                  "example": "768210"
+                },
+                "name": {
+                  "type": "str",
+                  "example": "Stuttgart Rebels"
+                },
+                "image_id": {
+                  "type": "str",
+                  "example": "44634"
+                },
+                "cc": {
+                  "type": "str",
+                  "example": "de"
+                }
+              }
+            },
+            "ss": {
+              "type": "NoneType",
+              "example": null
+            }
+          }
+        }
+      }
+    }
+  },
+  "/v1/events/upcoming?sport_id=13": {
+    "type": "object",
+    "properties": {
+      "success": {
+        "type": "int",
+        "example": 1
+      },
+      "pager": {
+        "type": "object",
+        "properties": {
+          "page": {
+            "type": "int",
+            "example": 1
+          },
+          "per_page": {
+            "type": "int",
+            "example": 50
+          },
+          "total": {
+            "type": "int",
+            "example": 453
+          }
+        }
+      },
+      "results": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "str",
+              "example": "9464780"
+            },
+            "sport_id": {
+              "type": "str",
+              "example": "13"
+            },
+            "time": {
+              "type": "str",
+              "example": "1738508700"
+            },
+            "time_status": {
+              "type": "str",
+              "example": "0"
+            },
+            "league": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "str",
+                  "example": "18605"
+                },
+                "name": {
+                  "type": "str",
+                  "example": "Davis Cup"
+                },
+                "cc": {
+                  "type": "NoneType",
+                  "example": null
+                }
+              }
+            },
+            "home": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "str",
+                  "example": "6807"
+                },
+                "name": {
+                  "type": "str",
+                  "example": "Romain Arneodo"
+                },
+                "image_id": {
+                  "type": "int",
+                  "example": 0
+                },
+                "cc": {
+                  "type": "str",
+                  "example": "mc"
+                }
+              }
+            },
+            "away": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "str",
+                  "example": "347922"
+                },
+                "name": {
+                  "type": "str",
+                  "example": "Henrique Rocha"
+                },
+                "image_id": {
+                  "type": "int",
+                  "example": 0
+                },
+                "cc": {
+                  "type": "str",
+                  "example": "pt"
+                }
+              }
+            },
+            "ss": {
+              "type": "NoneType",
+              "example": null
+            }
+          }
+        }
+      }
+    }
+  },
+  "/v1/events/upcoming?sport_id=14": {
+    "type": "object",
+    "properties": {
+      "success": {
+        "type": "int",
+        "example": 1
+      },
+      "pager": {
+        "type": "object",
+        "properties": {
+          "page": {
+            "type": "int",
+            "example": 1
+          },
+          "per_page": {
+            "type": "int",
+            "example": 50
+          },
+          "total": {
+            "type": "int",
+            "example": 74
+          }
+        }
+      },
+      "results": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "str",
+              "example": "9356963"
+            },
+            "sport_id": {
+              "type": "str",
+              "example": "14"
+            },
+            "time": {
+              "type": "str",
+              "example": "1738663200"
+            },
+            "time_status": {
+              "type": "str",
+              "example": "0"
+            },
+            "league": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "str",
+                  "example": "39433"
+                },
+                "name": {
+                  "type": "str",
+                  "example": "Welsh Open Qualifiers 2025"
+                },
+                "cc": {
+                  "type": "NoneType",
+                  "example": null
+                }
+              }
+            },
+            "home": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "str",
+                  "example": "51023"
+                },
+                "name": {
+                  "type": "str",
+                  "example": "Ross Muir"
+                },
+                "image_id": {
+                  "type": "str",
+                  "example": "130276"
+                },
+                "cc": {
+                  "type": "NoneType",
+                  "example": null
+                }
+              }
+            },
+            "away": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "str",
+                  "example": "281007"
+                },
+                "name": {
+                  "type": "str",
+                  "example": "Manasawin Phetmalaikul"
+                },
+                "image_id": {
+                  "type": "str",
+                  "example": "234846"
+                },
+                "cc": {
+                  "type": "NoneType",
+                  "example": null
+                }
+              }
+            },
+            "ss": {
+              "type": "NoneType",
+              "example": null
+            }
+          }
+        }
+      }
+    }
+  },
+  "/v1/events/upcoming?sport_id=12": {
+    "type": "object",
+    "properties": {
+      "success": {
+        "type": "int",
+        "example": 1
+      },
+      "pager": {
+        "type": "object",
+        "properties": {
+          "page": {
+            "type": "int",
+            "example": 1
+          },
+          "per_page": {
+            "type": "int",
+            "example": 50
+          },
+          "total": {
+            "type": "int",
+            "example": 102
+          }
+        }
+      },
+      "results": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "str",
+              "example": "9444086"
+            },
+            "sport_id": {
+              "type": "str",
+              "example": "12"
+            },
+            "time": {
+              "type": "str",
+              "example": "1738526400"
+            },
+            "time_status": {
+              "type": "str",
+              "example": "0"
+            },
+            "league": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "str",
+                  "example": "3587"
+                },
+                "name": {
+                  "type": "str",
+                  "example": "NFL Pro Bowl"
+                },
+                "cc": {
+                  "type": "str",
+                  "example": "us"
+                }
+              }
+            },
+            "home": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "str",
+                  "example": "1101156"
+                },
+                "name": {
+                  "type": "str",
+                  "example": "AFC Flag Football"
+                },
+                "image_id": {
+                  "type": "NoneType",
+                  "example": null
+                },
+                "cc": {
+                  "type": "NoneType",
+                  "example": null
+                }
+              }
+            },
+            "away": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "str",
+                  "example": "1101157"
+                },
+                "name": {
+                  "type": "str",
+                  "example": "NFC Flag Football"
+                },
+                "image_id": {
+                  "type": "NoneType",
+                  "example": null
+                },
+                "cc": {
+                  "type": "NoneType",
+                  "example": null
+                }
+              }
+            },
+            "ss": {
+              "type": "NoneType",
+              "example": null
+            },
+            "bet365_id": {
+              "type": "str",
+              "example": "168977064"
+            }
+          }
+        }
+      }
+    }
+  },
+  "/v1/events/upcoming?sport_id=3": {
+    "type": "object",
+    "properties": {
+      "success": {
+        "type": "int",
+        "example": 1
+      },
+      "pager": {
+        "type": "object",
+        "properties": {
+          "page": {
+            "type": "int",
+            "example": 1
+          },
+          "per_page": {
+            "type": "int",
+            "example": 50
+          },
+          "total": {
+            "type": "int",
+            "example": 178
+          }
+        }
+      },
+      "results": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "str",
+              "example": "9427750"
+            },
+            "sport_id": {
+              "type": "str",
+              "example": "3"
+            },
+            "time": {
+              "type": "str",
+              "example": "1738539000"
+            },
+            "time_status": {
+              "type": "str",
+              "example": "0"
+            },
+            "league": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "str",
+                  "example": "24765"
+                },
+                "name": {
+                  "type": "str",
+                  "example": "Australia NCL Women"
+                },
+                "cc": {
+                  "type": "str",
+                  "example": "au"
+                }
+              }
+            },
+            "home": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "str",
+                  "example": "822223"
+                },
+                "name": {
+                  "type": "str",
+                  "example": "Tasmania Women"
+                },
+                "image_id": {
+                  "type": "str",
+                  "example": "667711"
+                },
+                "cc": {
+                  "type": "str",
+                  "example": "au"
+                }
+              }
+            },
+            "away": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "str",
+                  "example": "823279"
+                },
+                "name": {
+                  "type": "str",
+                  "example": "ACT Women"
+                },
+                "image_id": {
+                  "type": "str",
+                  "example": "667703"
+                },
+                "cc": {
+                  "type": "str",
+                  "example": "au"
+                }
+              }
+            },
+            "ss": {
+              "type": "NoneType",
+              "example": null
+            },
+            "bet365_id": {
+              "type": "str",
+              "example": "168797394"
+            }
+          }
+        }
+      }
+    }
+  }
+}

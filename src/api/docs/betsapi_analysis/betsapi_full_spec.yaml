@@ -1,0 +1,72 @@
+openapi: 3.0.0
+info:
+  title: BetsAPI Full Documentation
+  description: Complete API documentation for BetsAPI integration
+  version: 1.0.0
+servers:
+- url: https://api.b365api.com
+  description: BetsAPI Production Server
+paths: {}
+components:
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: query
+      name: token
+      description: API token from BetsAPI
+  schemas:
+    Team:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+    League:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        cc:
+          type: string
+          description: Country code
+    Match:
+      type: object
+      properties:
+        id:
+          type: integer
+        sport_id:
+          type: integer
+        time_status:
+          type: string
+          enum:
+          - '0'
+          - '1'
+          - '2'
+          - '3'
+          - '4'
+        time:
+          type: integer
+        league:
+          $ref: '#/components/schemas/League'
+        home:
+          $ref: '#/components/schemas/Team'
+        away:
+          $ref: '#/components/schemas/Team'
+        ss:
+          type: string
+          description: Score
+        timer:
+          type: object
+          properties:
+            tm:
+              type: integer
+              description: Current minute
+            ts:
+              type: integer
+              description: Current second
+            tt:
+              type: string
+              description: Period text

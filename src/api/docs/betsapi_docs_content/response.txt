@@ -1,0 +1,6 @@
+URL: Response
+================================================================================
+
+All responses are in JSON and has asuccesskey to indicate it is successful or not.
+
+You'll getresultsif everything moves well, and an (R-Errors) will be thrown if failed.

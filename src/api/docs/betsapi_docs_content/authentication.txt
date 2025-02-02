@@ -1,0 +1,13 @@
+URL: Authentication
+================================================================================
+
+To authorize, use this code:
+Make sure replaceYOUR-TOKENwith your real token.
+
+curl "api_endpoint_here?token=YOUR-TOKEN"
+
+```
+curl "api_endpoint_here?token=YOUR-TOKEN"
+```
+
+You will get atokenfrom our support orOrderspage. you should pass it as token= in GET query.

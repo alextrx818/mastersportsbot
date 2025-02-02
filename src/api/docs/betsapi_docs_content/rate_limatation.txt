@@ -1,0 +1,25 @@
+URL: Rate Limatation
+================================================================================
+
+X-RateLimit-Limit:3600
+X-RateLimit-Remaining:3599
+X-RateLimit-Reset:1495857600
+
+```
+X-RateLimit-Limit:3600
+X-RateLimit-Remaining:3599
+X-RateLimit-Reset:1495857600
+```
+
+3600 requests per hour.
+
+You can buyVolume Packagesto increase the hourly rate limitation from 199,999 to 799,999 requests per hour.
+
+You can check the values in headers:
+
+Header NameDescriptionX-RateLimit-LimitThe maximum number of requests that the consumer is permitted to make per hour.X-RateLimit-RemainingThe number of requests remaining in the current rate limit window.X-RateLimit-ResetThe time at which the current rate limit window resets in UTC epoch seconds.
+
+Header Name | Description
+X-RateLimit-Limit | The maximum number of requests that the consumer is permitted to make per hour.
+X-RateLimit-Remaining | The number of requests remaining in the current rate limit window.
+X-RateLimit-Reset | The time at which the current rate limit window resets in UTC epoch seconds.

@@ -1,0 +1,134 @@
+URL: https://betsapi.com/docs
+================================================================================
+
+Introduction Â· Live Sports, Betting Odds API - BetsAPI
+BetsAPI.com
+Introduction
+Pricing/Packages
+Events API
+Summary
+Inplay Events
+Upcoming Events
+Ended Events
+Events Search
+Event View
+Event History
+Event Odds Summary
+Event Odds
+Event Stats Trend
+Event Lineup
+League
+League Table
+League TopList
+Team
+Team Squad
+Team Members
+Player
+Tennis Ranking
+Merge History
+FAQ
+Bet365 API
+Bet365 Summary
+Bet365 InPlay
+Bet365 InPlay Filter
+Bet365 Inplay Event
+Bet365 Upcoming Events
+Bet365 PreMatch Odds
+Bet365 Result
+Fields Explanation
+FAQ
+BWin API
+BWin InPlay
+BWin Event
+BWin Prematch Odds
+BWin Result
+Betfair API
+Betfair Summary
+Betfair SportsBook InPlay
+Betfair SportsBook Upcoming
+Betfair SportsBook Event
+Betfair Exchange InPlay
+Betfair Exchange Upcoming
+Betfair Exchange Event
+Betfair Timeline
+Betfair Result
+Sbobet API
+Sbobet InPlay
+Sbobet Upcoming
+Sbobet Event
+Sbobet Result
+1xBet API
+1xBet InPlay
+1xBet Upcoming
+1xBet Event
+1xBet Result
+Results API
+WilliamHill Result
+Sbobet Result
+Betsson Result
+Others
+FAQ
+Glossary
+Changes
+Code Samples
+Links
+BetsAPI.com
+Published with GitBook
+Introduction
+Introduction
+BetsAPI is a RESTful service for data on all sports. It is a
+PAID
+service with low price (started with $10 per month).
+Note that in order to access BetsAPI you must purchase
+related packages
+.
+Please
+contact us
+if you have any problem.
+Authentication
+To authorize, use this code:
+Make sure replace
+YOUR-TOKEN
+with your real token.
+curl "api_endpoint_here?token=YOUR-TOKEN"
+You will get a
+token
+from our support or
+Orders
+page. you should pass it as token= in GET query.
+API Endpoints
+API endpoint is started with
+https://api.b365api.com/
+We have another load balancer API endpoint as
+https://api.betsapi.com/
+in case you have issues with api.b365api.com.
+Rate Limatation
+X-RateLimit-Limit:3600
+X-RateLimit-Remaining:3599
+X-RateLimit-Reset:1495857600
+3600 requests per hour.
+You can buy
+Volume Packages
+to increase the hourly rate limitation from 199,999 to 799,999 requests per hour.
+You can check the values in headers:
+Header Name
+Description
+X-RateLimit-Limit
+The maximum number of requests that the consumer is permitted to make per hour.
+X-RateLimit-Remaining
+The number of requests remaining in the current rate limit window.
+X-RateLimit-Reset
+The time at which the current rate limit window resets in UTC epoch seconds.
+Response
+All responses are in JSON and has a
+success
+key to indicate it is successful or not.
+You'll get
+results
+if everything moves well, and an (
+R-Errors
+) will be thrown if failed.
+results matching "
+"
+No results matching "
+"

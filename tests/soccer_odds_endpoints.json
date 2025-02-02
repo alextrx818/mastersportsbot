@@ -1,0 +1,174 @@
+{
+  "prematch_odds": {
+    "query": "Find all endpoints for getting soccer prematch odds. Include exact endpoint URLs, all required parameters, response format, and example API calls. Focus on bet365 odds endpoints.",
+    "findings": [
+      {
+        "type": "h1",
+        "text": "Introduction",
+        "url": "https://betsapi.com/docs/",
+        "details": "BetsAPI is a RESTful service for data on all sports. It is a PAID service with low price (started with $10 per month)."
+      },
+      {
+        "type": "h1",
+        "text": "Introduction",
+        "url": "https://betsapi.com/docs/",
+        "details": "BetsAPI is a RESTful service for data on all sports. It is a PAID service with low price (started with $10 per month)."
+      },
+      {
+        "type": "h2",
+        "text": "Authentication",
+        "url": "https://betsapi.com/docs/",
+        "details": "To authorize, use this code:\nMake sure replace YOUR-TOKEN with your real token."
+      },
+      {
+        "type": "pre",
+        "text": "curl \"api_endpoint_here?token=YOUR-TOKEN\"",
+        "url": "https://betsapi.com/docs/",
+        "details": "You will get a token from our support or Orders page. you should pass it as token= in GET query."
+      },
+      {
+        "type": "h2",
+        "text": "API Endpoints",
+        "url": "https://betsapi.com/docs/",
+        "details": "API endpoint is started with https://api.b365api.com/"
+      },
+      {
+        "type": "h2",
+        "text": "Rate Limatation",
+        "url": "https://betsapi.com/docs/",
+        "details": "X-RateLimit-Limit:3600\nX-RateLimit-Remaining:3599\nX-RateLimit-Reset:1495857600"
+      },
+      {
+        "type": "h2",
+        "text": "Response",
+        "url": "https://betsapi.com/docs/",
+        "details": "All responses are in JSON and has a success key to indicate it is successful or not."
+      },
+      {
+        "type": "h1",
+        "text": "Events API Summary",
+        "url": "https://betsapi.com/docs/events/index.html",
+        "details": "Events API is aggregated from Bet365 (main source) and others. It keeps history data (since Sep 2016)."
+      },
+      {
+        "type": "h2",
+        "text": "Introduction",
+        "url": "https://betsapi.com/docs/events/index.html",
+        "details": "Events API is aggregated from Bet365 (main source) and others. It keeps history data (since Sep 2016)."
+      },
+      {
+        "type": "h3",
+        "text": "Difference with other APIs",
+        "url": "https://betsapi.com/docs/events/index.html",
+        "details": "It only include 1-3 main markets for each sports. If you need all odds markets, you should use Bet365/Bwin/Betfair API instead."
+      },
+      {
+        "type": "h1",
+        "text": "Bet365 Summary",
+        "url": "https://betsapi.com/docs/bet365/index.html",
+        "details": "It covers all markets/odds (expect Outrights and Bet Builder odds) that you can find in Bet365 website."
+      },
+      {
+        "type": "h1",
+        "text": "Bet365 Summary",
+        "url": "https://betsapi.com/docs/bet365/index.html",
+        "details": "It covers all markets/odds (expect Outrights and Bet Builder odds) that you can find in Bet365 website."
+      },
+      {
+        "type": "h2",
+        "text": "Introduction",
+        "url": "https://betsapi.com/docs/bet365/index.html",
+        "details": "It covers all markets/odds (expect Outrights and Bet Builder odds) that you can find in Bet365 website."
+      },
+      {
+        "type": "h3",
+        "text": "Prematch",
+        "url": "https://betsapi.com/docs/bet365/index.html",
+        "details": "use Bet365 Upcoming Events to get the id (which is FI)"
+      }
+    ]
+  },
+  "live_odds": {
+    "query": "Find all endpoints for getting soccer live in-play odds. Include exact endpoint URLs, all required parameters, response format, and example API calls. Focus on bet365 live odds endpoints.",
+    "findings": [
+      {
+        "type": "h1",
+        "text": "Introduction",
+        "url": "https://betsapi.com/docs/",
+        "details": "BetsAPI is a RESTful service for data on all sports. It is a PAID service with low price (started with $10 per month)."
+      },
+      {
+        "type": "h1",
+        "text": "Introduction",
+        "url": "https://betsapi.com/docs/",
+        "details": "BetsAPI is a RESTful service for data on all sports. It is a PAID service with low price (started with $10 per month)."
+      },
+      {
+        "type": "h2",
+        "text": "Authentication",
+        "url": "https://betsapi.com/docs/",
+        "details": "To authorize, use this code:\nMake sure replace YOUR-TOKEN with your real token."
+      },
+      {
+        "type": "pre",
+        "text": "curl \"api_endpoint_here?token=YOUR-TOKEN\"",
+        "url": "https://betsapi.com/docs/",
+        "details": "You will get a token from our support or Orders page. you should pass it as token= in GET query."
+      },
+      {
+        "type": "h2",
+        "text": "API Endpoints",
+        "url": "https://betsapi.com/docs/",
+        "details": "API endpoint is started with https://api.b365api.com/"
+      },
+      {
+        "type": "h2",
+        "text": "Rate Limatation",
+        "url": "https://betsapi.com/docs/",
+        "details": "X-RateLimit-Limit:3600\nX-RateLimit-Remaining:3599\nX-RateLimit-Reset:1495857600"
+      },
+      {
+        "type": "h2",
+        "text": "Response",
+        "url": "https://betsapi.com/docs/",
+        "details": "All responses are in JSON and has a success key to indicate it is successful or not."
+      },
+      {
+        "type": "h1",
+        "text": "Events API Summary",
+        "url": "https://betsapi.com/docs/events/index.html",
+        "details": "Events API is aggregated from Bet365 (main source) and others. It keeps history data (since Sep 2016)."
+      },
+      {
+        "type": "h2",
+        "text": "Introduction",
+        "url": "https://betsapi.com/docs/events/index.html",
+        "details": "Events API is aggregated from Bet365 (main source) and others. It keeps history data (since Sep 2016)."
+      },
+      {
+        "type": "h3",
+        "text": "Difference with other APIs",
+        "url": "https://betsapi.com/docs/events/index.html",
+        "details": "It only include 1-3 main markets for each sports. If you need all odds markets, you should use Bet365/Bwin/Betfair API instead."
+      },
+      {
+        "type": "h1",
+        "text": "Bet365 Summary",
+        "url": "https://betsapi.com/docs/bet365/index.html",
+        "details": "It covers all markets/odds (expect Outrights and Bet Builder odds) that you can find in Bet365 website."
+      },
+      {
+        "type": "h1",
+        "text": "Bet365 Summary",
+        "url": "https://betsapi.com/docs/bet365/index.html",
+        "details": "It covers all markets/odds (expect Outrights and Bet Builder odds) that you can find in Bet365 website."
+      },
+      {
+        "type": "h2",
+        "text": "Introduction",
+        "url": "https://betsapi.com/docs/bet365/index.html",
+        "details": "It covers all markets/odds (expect Outrights and Bet Builder odds) that you can find in Bet365 website."
+      }
+    ]
+  }
+}

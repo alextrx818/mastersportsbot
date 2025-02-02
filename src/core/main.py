@@ -1,7 +1,17 @@
 import os
 import requests
 from dotenv import load_dotenv
-from .sports_format import format_basketball_match, format_hockey_match, format_volleyball_match
+from .sports_format import (
+    format_soccer_match,
+    format_basketball_match,
+    format_hockey_match,
+    format_volleyball_match,
+    format_tennis_match,
+    format_snooker_match,
+    format_handball_match,
+    format_darts_match,
+    format_table_tennis_match
+)
 
 # Load environment variables
 load_dotenv()
@@ -71,14 +81,27 @@ def get_period(match, sport_id):
 
 def format_match(match, sport_id):
     """Format match with minimal essential information"""
-    if sport_id == 18:  # Basketball
+    # Use sport-specific formatters
+    if sport_id == 1:  # Soccer
+        return format_soccer_match(match)
+    elif sport_id == 18:  # Basketball
         return format_basketball_match(match)
-    elif sport_id == 17:  # Ice Hockey
-        return format_hockey_match(match)
+    elif sport_id == 13:  # Tennis
+        return format_tennis_match(match)
     elif sport_id == 91:  # Volleyball
         return format_volleyball_match(match)
+    elif sport_id == 17:  # Ice Hockey
+        return format_hockey_match(match)
+    elif sport_id == 14:  # Snooker
+        return format_snooker_match(match)
+    elif sport_id == 78:  # Handball
+        return format_handball_match(match)
+    elif sport_id == 15:  # Darts
+        return format_darts_match(match)
+    elif sport_id == 92:  # Table Tennis
+        return format_table_tennis_match(match)
     
-    # Default format for other sports
+    # Default format for any unhandled sports
     home = match.get('home', {}).get('name', 'Unknown')
     away = match.get('away', {}).get('name', 'Unknown')
     score = match.get('ss', 'vs')

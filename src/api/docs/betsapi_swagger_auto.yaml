@@ -1,0 +1,204 @@
+openapi: 3.0.0
+info:
+  title: BetsAPI Integration
+  description: API documentation for BetsAPI integration
+  version: 1.0.0
+servers:
+- url: https://api.b365api.com
+  description: BetsAPI Production Server
+paths:
+  /v1/events/inplay:
+    get:
+      summary: Get live events
+      description: Returns a list of live events, optionally filtered by sport_id
+      parameters:
+      - name: sport_id
+        in: query
+        description: Sport ID (1=Soccer, 18=Basketball, 91=Volleyball, etc)
+        required: true
+        schema:
+          type: integer
+      - name: league_id
+        in: query
+        description: Filter by league ID
+        required: false
+        schema:
+          type: integer
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: integer
+                    enum:
+                    - 1
+                  results:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Match'
+        '401':
+          description: Authentication error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      security:
+      - ApiKeyAuth: []
+  /v1/events/upcoming:
+    get:
+      summary: Get upcoming events
+      description: Returns a list of upcoming events for a specific sport
+      parameters:
+      - name: sport_id
+        in: query
+        description: Sport ID (1=Soccer, 18=Basketball, 91=Volleyball, etc)
+        required: true
+        schema:
+          type: integer
+      - name: league_id
+        in: query
+        description: Filter by league ID
+        required: false
+        schema:
+          type: integer
+      - name: day
+        in: query
+        description: Filter by day (YYYYMMDD format)
+        required: false
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: integer
+                    enum:
+                    - 1
+                  results:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Match'
+        '401':
+          description: Authentication error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      security:
+      - ApiKeyAuth: []
+  /v1/event/view/{event_id}:
+    get:
+      summary: Get event details
+      description: Returns detailed information about a specific event
+      parameters:
+      - name: event_id
+        in: path
+        description: Event ID
+        required: true
+        schema:
+          type: integer
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: integer
+                    enum:
+                    - 1
+                  results:
+                    $ref: '#/components/schemas/Match'
+        '401':
+          description: Authentication error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      security:
+      - ApiKeyAuth: []
+components:
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: query
+      name: token
+      description: API token from BetsAPI
+  schemas:
+    Team:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+    League:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        cc:
+          type: string
+          description: Country code
+    Match:
+      type: object
+      properties:
+        id:
+          type: integer
+        sport_id:
+          type: integer
+        time_status:
+          type: string
+          enum:
+          - '0'
+          - '1'
+          - '2'
+          - '3'
+          - '4'
+        time:
+          type: integer
+        league:
+          $ref: '#/components/schemas/League'
+        home:
+          $ref: '#/components/schemas/Team'
+        away:
+          $ref: '#/components/schemas/Team'
+        ss:
+          type: string
+          description: Score
+        timer:
+          type: object
+          properties:
+            tm:
+              type: integer
+              description: Current minute
+            ts:
+              type: integer
+              description: Current second
+            tt:
+              type: string
+              description: Period text
+    Error:
+      type: object
+      properties:
+        success:
+          type: integer
+          enum:
+          - 0
+        error:
+          type: integer
+        error_detail:
+          type: string

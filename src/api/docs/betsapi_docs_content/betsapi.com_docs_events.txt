@@ -1,0 +1,88 @@
+URL: https://betsapi.com/docs/events
+================================================================================
+
+Summary Â· Live Sports, Betting Odds API - BetsAPI
+BetsAPI.com
+Introduction
+Pricing/Packages
+Events API
+Summary
+Inplay Events
+Upcoming Events
+Ended Events
+Events Search
+Event View
+Event History
+Event Odds Summary
+Event Odds
+Event Stats Trend
+Event Lineup
+League
+League Table
+League TopList
+Team
+Team Squad
+Team Members
+Player
+Tennis Ranking
+Merge History
+FAQ
+Bet365 API
+Bet365 Summary
+Bet365 InPlay
+Bet365 InPlay Filter
+Bet365 Inplay Event
+Bet365 Upcoming Events
+Bet365 PreMatch Odds
+Bet365 Result
+Fields Explanation
+FAQ
+BWin API
+BWin InPlay
+BWin Event
+BWin Prematch Odds
+BWin Result
+Betfair API
+Betfair Summary
+Betfair SportsBook InPlay
+Betfair SportsBook Upcoming
+Betfair SportsBook Event
+Betfair Exchange InPlay
+Betfair Exchange Upcoming
+Betfair Exchange Event
+Betfair Timeline
+Betfair Result
+Sbobet API
+Sbobet InPlay
+Sbobet Upcoming
+Sbobet Event
+Sbobet Result
+1xBet API
+1xBet InPlay
+1xBet Upcoming
+1xBet Event
+1xBet Result
+Results API
+WilliamHill Result
+Sbobet Result
+Betsson Result
+Others
+FAQ
+Glossary
+Changes
+Code Samples
+Links
+BetsAPI.com
+Published with GitBook
+Summary
+Events API Summary
+Introduction
+Events API is aggregated from Bet365 (main source) and others. It keeps history data (since Sep 2016).
+We splitted it into Soccer API, Basketball API, Tennis API and others in case people are just interested in one sport.
+It includes Fixtures, Inplay and Results.
+Difference with other APIs
+It only include 1-3 main markets for each sports. If you need all odds markets, you should use Bet365/Bwin/Betfair API instead.
+results matching "
+"
+No results matching "
+"

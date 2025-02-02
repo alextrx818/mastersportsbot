@@ -1,0 +1,393 @@
+{
+  "url": "https://betsapi.com/docs/events/ended.html",
+  "content": {
+    "text": "Ended Events Â· Live Sports, Betting Odds API - BetsAPI\nBetsAPI.com\nIntroduction\nPricing/Packages\nEvents API\nSummary\nInplay Events\nUpcoming Events\nEnded Events\nEvents Search\nEvent View\nEvent History\nEvent Odds Summary\nEvent Odds\nEvent Stats Trend\nEvent Lineup\nLeague\nLeague Table\nLeague TopList\nTeam\nTeam Squad\nTeam Members\nPlayer\nTennis Ranking\nMerge History\nFAQ\nBet365 API\nBet365 Summary\nBet365 InPlay\nBet365 InPlay Filter\nBet365 Inplay Event\nBet365 Upcoming Events\nBet365 PreMatch Odds\nBet365 Result\nFields Explanation\nFAQ\nBWin API\nBWin InPlay\nBWin Event\nBWin Prematch Odds\nBWin Result\nBetfair API\nBetfair Summary\nBetfair SportsBook InPlay\nBetfair SportsBook Upcoming\nBetfair SportsBook Event\nBetfair Exchange InPlay\nBetfair Exchange Upcoming\nBetfair Exchange Event\nBetfair Timeline\nBetfair Result\nSbobet API\nSbobet InPlay\nSbobet Upcoming\nSbobet Event\nSbobet Result\n1xBet API\n1xBet InPlay\n1xBet Upcoming\n1xBet Event\n1xBet Result\nResults API\nWilliamHill Result\nSbobet Result\nBetsson Result\nOthers\nFAQ\nGlossary\nChanges\nCode Samples\nLinks\nBetsAPI.com\nPublished with GitBook\nEnded Events\nEnded Events\nHTTP Request\nGET https://api.b365api.com/v3/events/ended\ncurl \"\nhttps://api.b365api.com/v3/events/ended?sport_id=1&token=YOUR-TOKEN\n\"\nNOTE it is\n/v3/\ninstead of /v1/\nQuery Parameters\nParameter\nRequired?\nDescription\nsport_id\nYes\nR-SportID\nleague_id\nNo\nuseful when you want only one league\nteam_id\nNo\nuseful when you want only one team\ncc\nNo\nEg: 'co' for Colombia (\nR-Countries\n)\nday\nNo\nformat YYYYMMDD, eg: 20180814 (min 20160901)\nskip_esports\nNo\nskip Esoccer, Ebasketball etc. in the result\npage\nNo\nR-Pager\n, max 100\nHTTP Response\nended.json\nChanges\n2021-09-09\nupgrade to /v3/ which will display half score and stats (removing 'extra')\n2019-02-20\ndue to SQL LIMIT performance issue, we only allow max page=100 on all time. please use 'day=' or 'league_id=' to get history data.\n2018-09-01\ndue to SQL LIMIT performance issue, we only allow max page=100 on weekend. Sorry\nplease use day= for historical data\n2018-08-14\nlimit max\npage\nto 1000 due to SQL LIMIT performance (use day= for historical data)\n2018-05-06 /v2/\n?day=TODAY will only get ended events instead of all\nresults matching \"\n\"\nNo results matching \"\n\"",
+    "tables": [
+      [
+        [
+          "Parameter",
+          "Required?",
+          "Description"
+        ],
+        [
+          "sport_id",
+          "Yes",
+          "R-SportID"
+        ],
+        [
+          "league_id",
+          "No",
+          "useful when you want only one league"
+        ],
+        [
+          "team_id",
+          "No",
+          "useful when you want only one team"
+        ],
+        [
+          "cc",
+          "No",
+          "Eg: 'co' for Colombia (R-Countries)"
+        ],
+        [
+          "day",
+          "No",
+          "format YYYYMMDD, eg: 20180814 (min 20160901)"
+        ],
+        [
+          "skip_esports",
+          "No",
+          "skip Esoccer, Ebasketball etc. in the result"
+        ],
+        [
+          "page",
+          "No",
+          "R-Pager, max 100"
+        ]
+      ]
+    ],
+    "code_blocks": [
+      "GET https://api.b365api.com/v3/events/ended"
+    ],
+    "links": [
+      {
+        "text": "BetsAPI.com",
+        "href": "https://betsapi.com/"
+      },
+      {
+        "text": "Introduction",
+        "href": "../"
+      },
+      {
+        "text": "Pricing/Packages",
+        "href": "../pricing.html"
+      },
+      {
+        "text": "Summary",
+        "href": "./"
+      },
+      {
+        "text": "Inplay Events",
+        "href": "inplay.html"
+      },
+      {
+        "text": "Upcoming Events",
+        "href": "upcoming.html"
+      },
+      {
+        "text": "Ended Events",
+        "href": "ended.html"
+      },
+      {
+        "text": "Events Search",
+        "href": "search.html"
+      },
+      {
+        "text": "Event View",
+        "href": "view.html"
+      },
+      {
+        "text": "Event History",
+        "href": "history.html"
+      },
+      {
+        "text": "Event Odds Summary",
+        "href": "odds_summary.html"
+      },
+      {
+        "text": "Event Odds",
+        "href": "odds.html"
+      },
+      {
+        "text": "Event Stats Trend",
+        "href": "stats_trend.html"
+      },
+      {
+        "text": "Event Lineup",
+        "href": "lineup.html"
+      },
+      {
+        "text": "League",
+        "href": "league.html"
+      },
+      {
+        "text": "League Table",
+        "href": "league_table.html"
+      },
+      {
+        "text": "League TopList",
+        "href": "league_toplist.html"
+      },
+      {
+        "text": "Team",
+        "href": "team.html"
+      },
+      {
+        "text": "Team Squad",
+        "href": "team_squad.html"
+      },
+      {
+        "text": "Team Members",
+        "href": "team_members.html"
+      },
+      {
+        "text": "Player",
+        "href": "player.html"
+      },
+      {
+        "text": "Tennis Ranking",
+        "href": "tennis_ranking.html"
+      },
+      {
+        "text": "Merge History",
+        "href": "merge_history.html"
+      },
+      {
+        "text": "FAQ",
+        "href": "faq.html"
+      },
+      {
+        "text": "Bet365 Summary",
+        "href": "../bet365/"
+      },
+      {
+        "text": "Bet365 InPlay",
+        "href": "../bet365/inplay.html"
+      },
+      {
+        "text": "Bet365 InPlay Filter",
+        "href": "../bet365/inplay_filter.html"
+      },
+      {
+        "text": "Bet365 Inplay Event",
+        "href": "../bet365/event.html"
+      },
+      {
+        "text": "Bet365 Upcoming Events",
+        "href": "../bet365/upcoming.html"
+      },
+      {
+        "text": "Bet365 PreMatch Odds",
+        "href": "../bet365/prematch.html"
+      },
+      {
+        "text": "Bet365 Result",
+        "href": "../bet365/result.html"
+      },
+      {
+        "text": "Fields Explanation",
+        "href": "../bet365/fields.html"
+      },
+      {
+        "text": "FAQ",
+        "href": "../bet365/faq.html"
+      },
+      {
+        "text": "BWin InPlay",
+        "href": "../bwin/inplay.html"
+      },
+      {
+        "text": "BWin Event",
+        "href": "../bwin/event.html"
+      },
+      {
+        "text": "BWin Prematch Odds",
+        "href": "../bwin/prematch.html"
+      },
+      {
+        "text": "BWin Result",
+        "href": "../bwin/result.html"
+      },
+      {
+        "text": "Betfair Summary",
+        "href": "../betfair/"
+      },
+      {
+        "text": "Betfair SportsBook InPlay",
+        "href": "../betfair/sb_inplay.html"
+      },
+      {
+        "text": "Betfair SportsBook Upcoming",
+        "href": "../betfair/sb_upcoming.html"
+      },
+      {
+        "text": "Betfair SportsBook Event",
+        "href": "../betfair/sb_event.html"
+      },
+      {
+        "text": "Betfair Exchange InPlay",
+        "href": "../betfair/ex_inplay.html"
+      },
+      {
+        "text": "Betfair Exchange Upcoming",
+        "href": "../betfair/ex_upcoming.html"
+      },
+      {
+        "text": "Betfair Exchange Event",
+        "href": "../betfair/ex_event.html"
+      },
+      {
+        "text": "Betfair Timeline",
+        "href": "../betfair/timeline.html"
+      },
+      {
+        "text": "Betfair Result",
+        "href": "../betfair/result.html"
+      },
+      {
+        "text": "Sbobet InPlay",
+        "href": "../sbobet/inplay.html"
+      },
+      {
+        "text": "Sbobet Upcoming",
+        "href": "../sbobet/upcoming.html"
+      },
+      {
+        "text": "Sbobet Event",
+        "href": "../sbobet/event.html"
+      },
+      {
+        "text": "Sbobet Result",
+        "href": "../sbobet/result.html"
+      },
+      {
+        "text": "1xBet InPlay",
+        "href": "../1xbet/inplay.html"
+      },
+      {
+        "text": "1xBet Upcoming",
+        "href": "../1xbet/upcoming.html"
+      },
+      {
+        "text": "1xBet Event",
+        "href": "../1xbet/event.html"
+      },
+      {
+        "text": "1xBet Result",
+        "href": "../1xbet/result.html"
+      },
+      {
+        "text": "WilliamHill Result",
+        "href": "../results/williamhill.html"
+      },
+      {
+        "text": "Sbobet Result",
+        "href": "../results/sbobet.html"
+      },
+      {
+        "text": "Betsson Result",
+        "href": "../results/betsson.html"
+      },
+      {
+        "text": "FAQ",
+        "href": "../others/faq.html"
+      },
+      {
+        "text": "Glossary",
+        "href": "../GLOSSARY.html"
+      },
+      {
+        "text": "Changes",
+        "href": "../others/changes.html"
+      },
+      {
+        "text": "Code Samples",
+        "href": "../others/code_samples.html"
+      },
+      {
+        "text": "BetsAPI.com",
+        "href": "https://betsapi.com/"
+      },
+      {
+        "text": "Published with GitBook",
+        "href": "https://www.gitbook.com"
+      },
+      {
+        "text": "Ended Events",
+        "href": ".."
+      },
+      {
+        "text": "https://api.b365api.com/v3/events/ended?sport_id=1&token=YOUR-TOKEN",
+        "href": "https://api.b365api.com/v3/events/ended?sport_id=1&token=YOUR-TOKEN"
+      },
+      {
+        "text": "R-SportID",
+        "href": "../GLOSSARY.html#r-sportid"
+      },
+      {
+        "text": "R-Countries",
+        "href": "../GLOSSARY.html#r-countries"
+      },
+      {
+        "text": "R-Pager",
+        "href": "../GLOSSARY.html#r-pager"
+      },
+      {
+        "text": "ended.json",
+        "href": "../samples/ended.json"
+      },
+      {
+        "text": "",
+        "href": "upcoming.html"
+      },
+      {
+        "text": "",
+        "href": "search.html"
+      }
+    ],
+    "headers": [
+      {
+        "level": "h1",
+        "text": "Ended Events"
+      },
+      {
+        "level": "h1",
+        "text": "Ended Events"
+      },
+      {
+        "level": "h2",
+        "text": "HTTP Request"
+      },
+      {
+        "level": "h3",
+        "text": "Query Parameters"
+      },
+      {
+        "level": "h2",
+        "text": "HTTP Response"
+      },
+      {
+        "level": "h2",
+        "text": "Changes"
+      },
+      {
+        "level": "h4",
+        "text": "2021-09-09"
+      },
+      {
+        "level": "h4",
+        "text": "2019-02-20"
+      },
+      {
+        "level": "h4",
+        "text": "2018-09-01"
+      },
+      {
+        "level": "h4",
+        "text": "2018-08-14"
+      },
+      {
+        "level": "h4",
+        "text": "2018-05-06 /v2/"
+      },
+      {
+        "level": "h1",
+        "text": "results matching \"\""
+      },
+      {
+        "level": "h1",
+        "text": "No results matching \"\""
+      }
+    ]
+  }
+}

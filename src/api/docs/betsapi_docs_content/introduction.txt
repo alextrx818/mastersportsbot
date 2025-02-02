@@ -1,0 +1,8 @@
+URL: Introduction
+================================================================================
+
+BetsAPI is a RESTful service for data on all sports. It is aPAIDservice with low price (started with $10 per month).
+
+Note that in order to access BetsAPI you must purchaserelated packages.
+
+Pleasecontact usif you have any problem.

@@ -1,0 +1,11 @@
+BetsAPI Documentation Index
+================================================================================
+
+- API Endpoints
+- Authentication
+- Full Documentation
+- Introduction
+- No results matching ""
+- Rate Limatation
+- Response
+- results matching ""

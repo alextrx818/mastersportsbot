@@ -1,0 +1,646 @@
+{
+  "url": "https://betsapi.com/docs/events/odds.html",
+  "content": {
+    "text": "Event Odds Â· Live Sports, Betting Odds API - BetsAPI\nBetsAPI.com\nIntroduction\nPricing/Packages\nEvents API\nSummary\nInplay Events\nUpcoming Events\nEnded Events\nEvents Search\nEvent View\nEvent History\nEvent Odds Summary\nEvent Odds\nEvent Stats Trend\nEvent Lineup\nLeague\nLeague Table\nLeague TopList\nTeam\nTeam Squad\nTeam Members\nPlayer\nTennis Ranking\nMerge History\nFAQ\nBet365 API\nBet365 Summary\nBet365 InPlay\nBet365 InPlay Filter\nBet365 Inplay Event\nBet365 Upcoming Events\nBet365 PreMatch Odds\nBet365 Result\nFields Explanation\nFAQ\nBWin API\nBWin InPlay\nBWin Event\nBWin Prematch Odds\nBWin Result\nBetfair API\nBetfair Summary\nBetfair SportsBook InPlay\nBetfair SportsBook Upcoming\nBetfair SportsBook Event\nBetfair Exchange InPlay\nBetfair Exchange Upcoming\nBetfair Exchange Event\nBetfair Timeline\nBetfair Result\nSbobet API\nSbobet InPlay\nSbobet Upcoming\nSbobet Event\nSbobet Result\n1xBet API\n1xBet InPlay\n1xBet Upcoming\n1xBet Event\n1xBet Result\nResults API\nWilliamHill Result\nSbobet Result\nBetsson Result\nOthers\nFAQ\nGlossary\nChanges\nCode Samples\nLinks\nBetsAPI.com\nPublished with GitBook\nEvent Odds\nEvent Odds\nHTTP Request\nGET https://api.b365api.com/v2/event/odds\ncurl \"\nhttps://api.b365api.com/v2/event/odds?token=YOUR_TOKEN&event_id=1260046\n\"\nNOTE it is\n/v2/\ninstead of /v1/\nURL Parameters\nParameter\nRequired?\nDescription\nevent_id\nYes\nEvent ID you get from events/*\nsource\nNo\nPossible value: bet365, 10bet, ladbrokes, williamhill, betclic, pinnaclesports, planetwin365, ysb88, 188bet, unibet, bwin, betfair, betfred, cloudbet, betsson, betdaq, paddypower, sbobet, titanbet, betathome, dafabet, marathonbet, betvictor, everygame, interwetten, betway, 1xbet, nitrogensports, skybet, marsbet, cashpoint, macauslot, hkjc, ggbet, mansion, spreadex, virginbet. defaults to bet365.\nsince_time\nNo\nInteger. add_time will be >= $since_time in results. Faster to get only updates.\nodds_market\nNo\nString. if you only need one (or few) market to save time/bandwidth, pass the related string like &odds_market=1 or &odds_market=2,3 etc.\nNote\nodds_market\nis not 1_1, just pass the part after _\nHTTP Response\nevent_odds.json\nNote that the\nid\ninside is unique for each bookmaker+odds_market. it's not unique across the bookmakers. it's not unique across the odds_market.\nstats.matching_dir == -1 means it's \"reversed\" matching\nstats.odds_update means the last time we checked the market (will be gone after the event is finished)\nOdds Markets\nThe Market Key is combined with \"SPORT_ID\"_\"MARKET_ID\". eg 1_* goes to Soccer and 18_* goes to Basketball.\nMarket Key\nDescription\nMarket Key\nDescription\n1_1\n1X2, Full Time Result\n1_2\nAsian Handicap\n1_3\nO/U, Goal Line\n1_4\nAsian Corners\n1_5\n1st Half Asian Handicap\n1_6\n1st Half Goal Line\n1_7\n1st Half Asian Corners\n1_8\nHalf Time Result\n18_1\nMoney Line\n18_2\nSpread\n18_3\nTotal Points\n18_4\nMoney Line (Half)\n18_5\nSpread (Half)\n18_6\nTotal Points (Half)\n18_7\nQuarter - Winner (2-Way)\n18_8\nQuarter - Handicap\n18_9\nQuarter - Total (2-Way)\n*_1\nMatch Winner 2-Way\n*_2\nAsian Handicap\n*_3\nOver/Under\n3_4\nDraw No Bet (Cricket)\nIt does not include markets like Double Chance, BTTS etc. if you need all markets, please try Bet365 API or others.\nCoverage\nIt might be not very accurate since we're improving it everyday.\nSport/Bookmaker\nSoccer (Inplay/Prematch)\nBasketball (Inplay/Prematch)\nOthers (Inplay/Prematch)\nBet365\nYes/Yes\nYes/Yes\nYes/Yes\nBWin\nYes/Yes\nYes/Yes\nPart-of/Part-of\nBetFair\nYes/Yes\nYes/Yes\nPart-of/Part-of\nBetway\nYes/Yes\nYes/Yes\nPart-of/Part-of\n10Bet\nYes/Yes\nYes/Yes\n?/?\nLadbrokes\nYes/Yes\nYes/Yes\nPart-of/Part-of\nYSB88\nNo/Yes\nNo/Yes\nNo/Part-of\nWilliamHill\nLimited/Yes\nNo/Yes\nNo/Part-of\nBetclic\nNo/Yes\nNo/Yes\nNo/Yes\nPinnacle\nNo/No\nNo/No\nNo/No\nPlanetWin365\nYes/Yes\nYes/Yes\nPart-of/Part-of\n188Bet\nYes/Yes\nYes/Yes\nPart-of/Part-of\nUniBet\nYes/Yes\nYes/Yes\nNo/No\nBetFred\nNo/Yes\nNo/Yes\nNo/Part-of\n888Sport\nYes/Yes\nYes/Yes\nNo/No\nCloudBet\nYes/Yes\nYes/Yes\nPart-of/Part-of\nBetsson\nYes/Yes\nYes/Yes\nNo/No\nBetdaq\nNo/Yes\nNo/Yes\nNo/No\nPaddyPower\nYes/No\nNo/No\nNo/No\nSBOBET\nYes/Yes\nNo/Yes\nNo/No\nTitanBet\nYes/Yes\nNo/No\nNo/No\nBetAtHome\nNo/Yes\nNo/Yes\nNo/Part-of\nDafaBet\nYes/No\nYes/No\nPart-of/No\nMarathonbet\nNo/Yes\nNo/Yes\nNo/No\nBetVictor\nYes/Yes\nYes/Yes\nNo/No\nEverygame\nNo/Yes\nNo/Yes\nNo/Part-of\nInterwetten\nNo/Yes\nNo/Yes\nNo/Part-of\n1XBet\nYes/Yes\nYes/Yes\nNo/No\nNitrogen\nNo/Yes\nNo/Yes\nNo/Part-of\nWinner\nYes/Yes\nNo/No\nNo/No\nSkyBet\nNo/Yes\nNo/No\nNo/No\nMarsBet\nNo/Yes\nNo/No\nNo/No\nMacauslot (澳彩)\nNo/Yes\nNo/Yes\nNo/No\nGGBet\nNo/Yes\nNo/Yes\nNo/Part-of\nChanges\n2019-01-08 /v2/\nadded stats.matching_dir and odds_update\nrenamed 18_1_h to 18_4, 18_2_h to 18_5, 18_3_h to 18_6, added 18_7 Quarter - Winner (2-Way)\nresults matching \"\n\"\nNo results matching \"\n\"",
+    "tables": [
+      [
+        [
+          "Parameter",
+          "Required?",
+          "Description"
+        ],
+        [
+          "event_id",
+          "Yes",
+          "Event ID you get from events/*"
+        ],
+        [
+          "source",
+          "No",
+          "Possible value: bet365, 10bet, ladbrokes, williamhill, betclic, pinnaclesports, planetwin365, ysb88, 188bet, unibet, bwin, betfair, betfred, cloudbet, betsson, betdaq, paddypower, sbobet, titanbet, betathome, dafabet, marathonbet, betvictor, everygame, interwetten, betway, 1xbet, nitrogensports, skybet, marsbet, cashpoint, macauslot, hkjc, ggbet, mansion, spreadex, virginbet. defaults to bet365."
+        ],
+        [
+          "since_time",
+          "No",
+          "Integer. add_time will be >= $since_time in results. Faster to get only updates."
+        ],
+        [
+          "odds_market",
+          "No",
+          "String. if you only need one (or few) market to save time/bandwidth, pass the related string like &odds_market=1 or &odds_market=2,3 etc."
+        ]
+      ],
+      [
+        [
+          "Market Key",
+          "Description",
+          "Market Key",
+          "Description"
+        ],
+        [
+          "1_1",
+          "1X2, Full Time Result",
+          "1_2",
+          "Asian Handicap"
+        ],
+        [
+          "1_3",
+          "O/U, Goal Line",
+          "1_4",
+          "Asian Corners"
+        ],
+        [
+          "1_5",
+          "1st Half Asian Handicap",
+          "1_6",
+          "1st Half Goal Line"
+        ],
+        [
+          "1_7",
+          "1st Half Asian Corners",
+          "1_8",
+          "Half Time Result"
+        ],
+        [
+          "18_1",
+          "Money Line",
+          "18_2",
+          "Spread"
+        ],
+        [
+          "18_3",
+          "Total Points",
+          "18_4",
+          "Money Line (Half)"
+        ],
+        [
+          "18_5",
+          "Spread (Half)",
+          "18_6",
+          "Total Points (Half)"
+        ],
+        [
+          "18_7",
+          "Quarter - Winner (2-Way)",
+          "18_8",
+          "Quarter - Handicap"
+        ],
+        [
+          "18_9",
+          "Quarter - Total (2-Way)"
+        ],
+        [
+          "*_1",
+          "Match Winner 2-Way"
+        ],
+        [
+          "*_2",
+          "Asian Handicap"
+        ],
+        [
+          "*_3",
+          "Over/Under"
+        ],
+        [
+          "3_4",
+          "Draw No Bet (Cricket)"
+        ]
+      ],
+      [
+        [
+          "Sport/Bookmaker",
+          "Soccer (Inplay/Prematch)",
+          "Basketball (Inplay/Prematch)",
+          "Others (Inplay/Prematch)"
+        ],
+        [
+          "Bet365",
+          "Yes/Yes",
+          "Yes/Yes",
+          "Yes/Yes"
+        ],
+        [
+          "BWin",
+          "Yes/Yes",
+          "Yes/Yes",
+          "Part-of/Part-of"
+        ],
+        [
+          "BetFair",
+          "Yes/Yes",
+          "Yes/Yes",
+          "Part-of/Part-of"
+        ],
+        [
+          "Betway",
+          "Yes/Yes",
+          "Yes/Yes",
+          "Part-of/Part-of"
+        ],
+        [
+          "10Bet",
+          "Yes/Yes",
+          "Yes/Yes",
+          "?/?"
+        ],
+        [
+          "Ladbrokes",
+          "Yes/Yes",
+          "Yes/Yes",
+          "Part-of/Part-of"
+        ],
+        [
+          "YSB88",
+          "No/Yes",
+          "No/Yes",
+          "No/Part-of"
+        ],
+        [
+          "WilliamHill",
+          "Limited/Yes",
+          "No/Yes",
+          "No/Part-of"
+        ],
+        [
+          "Betclic",
+          "No/Yes",
+          "No/Yes",
+          "No/Yes"
+        ],
+        [
+          "Pinnacle",
+          "No/No",
+          "No/No",
+          "No/No"
+        ],
+        [
+          "PlanetWin365",
+          "Yes/Yes",
+          "Yes/Yes",
+          "Part-of/Part-of"
+        ],
+        [
+          "188Bet",
+          "Yes/Yes",
+          "Yes/Yes",
+          "Part-of/Part-of"
+        ],
+        [
+          "UniBet",
+          "Yes/Yes",
+          "Yes/Yes",
+          "No/No"
+        ],
+        [
+          "BetFred",
+          "No/Yes",
+          "No/Yes",
+          "No/Part-of"
+        ],
+        [
+          "888Sport",
+          "Yes/Yes",
+          "Yes/Yes",
+          "No/No"
+        ],
+        [
+          "CloudBet",
+          "Yes/Yes",
+          "Yes/Yes",
+          "Part-of/Part-of"
+        ],
+        [
+          "Betsson",
+          "Yes/Yes",
+          "Yes/Yes",
+          "No/No"
+        ],
+        [
+          "Betdaq",
+          "No/Yes",
+          "No/Yes",
+          "No/No"
+        ],
+        [
+          "PaddyPower",
+          "Yes/No",
+          "No/No",
+          "No/No"
+        ],
+        [
+          "SBOBET",
+          "Yes/Yes",
+          "No/Yes",
+          "No/No"
+        ],
+        [
+          "TitanBet",
+          "Yes/Yes",
+          "No/No",
+          "No/No"
+        ],
+        [
+          "BetAtHome",
+          "No/Yes",
+          "No/Yes",
+          "No/Part-of"
+        ],
+        [
+          "DafaBet",
+          "Yes/No",
+          "Yes/No",
+          "Part-of/No"
+        ],
+        [
+          "Marathonbet",
+          "No/Yes",
+          "No/Yes",
+          "No/No"
+        ],
+        [
+          "BetVictor",
+          "Yes/Yes",
+          "Yes/Yes",
+          "No/No"
+        ],
+        [
+          "Everygame",
+          "No/Yes",
+          "No/Yes",
+          "No/Part-of"
+        ],
+        [
+          "Interwetten",
+          "No/Yes",
+          "No/Yes",
+          "No/Part-of"
+        ],
+        [
+          "1XBet",
+          "Yes/Yes",
+          "Yes/Yes",
+          "No/No"
+        ],
+        [
+          "Nitrogen",
+          "No/Yes",
+          "No/Yes",
+          "No/Part-of"
+        ],
+        [
+          "Winner",
+          "Yes/Yes",
+          "No/No",
+          "No/No"
+        ],
+        [
+          "SkyBet",
+          "No/Yes",
+          "No/No",
+          "No/No"
+        ],
+        [
+          "MarsBet",
+          "No/Yes",
+          "No/No",
+          "No/No"
+        ],
+        [
+          "Macauslot (澳彩)",
+          "No/Yes",
+          "No/Yes",
+          "No/No"
+        ],
+        [
+          "GGBet",
+          "No/Yes",
+          "No/Yes",
+          "No/Part-of"
+        ]
+      ]
+    ],
+    "code_blocks": [
+      "GET https://api.b365api.com/v2/event/odds"
+    ],
+    "links": [
+      {
+        "text": "BetsAPI.com",
+        "href": "https://betsapi.com/"
+      },
+      {
+        "text": "Introduction",
+        "href": "../"
+      },
+      {
+        "text": "Pricing/Packages",
+        "href": "../pricing.html"
+      },
+      {
+        "text": "Summary",
+        "href": "./"
+      },
+      {
+        "text": "Inplay Events",
+        "href": "inplay.html"
+      },
+      {
+        "text": "Upcoming Events",
+        "href": "upcoming.html"
+      },
+      {
+        "text": "Ended Events",
+        "href": "ended.html"
+      },
+      {
+        "text": "Events Search",
+        "href": "search.html"
+      },
+      {
+        "text": "Event View",
+        "href": "view.html"
+      },
+      {
+        "text": "Event History",
+        "href": "history.html"
+      },
+      {
+        "text": "Event Odds Summary",
+        "href": "odds_summary.html"
+      },
+      {
+        "text": "Event Odds",
+        "href": "odds.html"
+      },
+      {
+        "text": "Event Stats Trend",
+        "href": "stats_trend.html"
+      },
+      {
+        "text": "Event Lineup",
+        "href": "lineup.html"
+      },
+      {
+        "text": "League",
+        "href": "league.html"
+      },
+      {
+        "text": "League Table",
+        "href": "league_table.html"
+      },
+      {
+        "text": "League TopList",
+        "href": "league_toplist.html"
+      },
+      {
+        "text": "Team",
+        "href": "team.html"
+      },
+      {
+        "text": "Team Squad",
+        "href": "team_squad.html"
+      },
+      {
+        "text": "Team Members",
+        "href": "team_members.html"
+      },
+      {
+        "text": "Player",
+        "href": "player.html"
+      },
+      {
+        "text": "Tennis Ranking",
+        "href": "tennis_ranking.html"
+      },
+      {
+        "text": "Merge History",
+        "href": "merge_history.html"
+      },
+      {
+        "text": "FAQ",
+        "href": "faq.html"
+      },
+      {
+        "text": "Bet365 Summary",
+        "href": "../bet365/"
+      },
+      {
+        "text": "Bet365 InPlay",
+        "href": "../bet365/inplay.html"
+      },
+      {
+        "text": "Bet365 InPlay Filter",
+        "href": "../bet365/inplay_filter.html"
+      },
+      {
+        "text": "Bet365 Inplay Event",
+        "href": "../bet365/event.html"
+      },
+      {
+        "text": "Bet365 Upcoming Events",
+        "href": "../bet365/upcoming.html"
+      },
+      {
+        "text": "Bet365 PreMatch Odds",
+        "href": "../bet365/prematch.html"
+      },
+      {
+        "text": "Bet365 Result",
+        "href": "../bet365/result.html"
+      },
+      {
+        "text": "Fields Explanation",
+        "href": "../bet365/fields.html"
+      },
+      {
+        "text": "FAQ",
+        "href": "../bet365/faq.html"
+      },
+      {
+        "text": "BWin InPlay",
+        "href": "../bwin/inplay.html"
+      },
+      {
+        "text": "BWin Event",
+        "href": "../bwin/event.html"
+      },
+      {
+        "text": "BWin Prematch Odds",
+        "href": "../bwin/prematch.html"
+      },
+      {
+        "text": "BWin Result",
+        "href": "../bwin/result.html"
+      },
+      {
+        "text": "Betfair Summary",
+        "href": "../betfair/"
+      },
+      {
+        "text": "Betfair SportsBook InPlay",
+        "href": "../betfair/sb_inplay.html"
+      },
+      {
+        "text": "Betfair SportsBook Upcoming",
+        "href": "../betfair/sb_upcoming.html"
+      },
+      {
+        "text": "Betfair SportsBook Event",
+        "href": "../betfair/sb_event.html"
+      },
+      {
+        "text": "Betfair Exchange InPlay",
+        "href": "../betfair/ex_inplay.html"
+      },
+      {
+        "text": "Betfair Exchange Upcoming",
+        "href": "../betfair/ex_upcoming.html"
+      },
+      {
+        "text": "Betfair Exchange Event",
+        "href": "../betfair/ex_event.html"
+      },
+      {
+        "text": "Betfair Timeline",
+        "href": "../betfair/timeline.html"
+      },
+      {
+        "text": "Betfair Result",
+        "href": "../betfair/result.html"
+      },
+      {
+        "text": "Sbobet InPlay",
+        "href": "../sbobet/inplay.html"
+      },
+      {
+        "text": "Sbobet Upcoming",
+        "href": "../sbobet/upcoming.html"
+      },
+      {
+        "text": "Sbobet Event",
+        "href": "../sbobet/event.html"
+      },
+      {
+        "text": "Sbobet Result",
+        "href": "../sbobet/result.html"
+      },
+      {
+        "text": "1xBet InPlay",
+        "href": "../1xbet/inplay.html"
+      },
+      {
+        "text": "1xBet Upcoming",
+        "href": "../1xbet/upcoming.html"
+      },
+      {
+        "text": "1xBet Event",
+        "href": "../1xbet/event.html"
+      },
+      {
+        "text": "1xBet Result",
+        "href": "../1xbet/result.html"
+      },
+      {
+        "text": "WilliamHill Result",
+        "href": "../results/williamhill.html"
+      },
+      {
+        "text": "Sbobet Result",
+        "href": "../results/sbobet.html"
+      },
+      {
+        "text": "Betsson Result",
+        "href": "../results/betsson.html"
+      },
+      {
+        "text": "FAQ",
+        "href": "../others/faq.html"
+      },
+      {
+        "text": "Glossary",
+        "href": "../GLOSSARY.html"
+      },
+      {
+        "text": "Changes",
+        "href": "../others/changes.html"
+      },
+      {
+        "text": "Code Samples",
+        "href": "../others/code_samples.html"
+      },
+      {
+        "text": "BetsAPI.com",
+        "href": "https://betsapi.com/"
+      },
+      {
+        "text": "Published with GitBook",
+        "href": "https://www.gitbook.com"
+      },
+      {
+        "text": "Event Odds",
+        "href": ".."
+      },
+      {
+        "text": "https://api.b365api.com/v2/event/odds?token=YOUR_TOKEN&event_id=1260046",
+        "href": "https://api.b365api.com/v2/event/odds?token=YOUR_TOKEN&event_id=1260046"
+      },
+      {
+        "text": "event_odds.json",
+        "href": "../samples/event_odds.json"
+      },
+      {
+        "text": "",
+        "href": "odds_summary.html"
+      },
+      {
+        "text": "",
+        "href": "stats_trend.html"
+      }
+    ],
+    "headers": [
+      {
+        "level": "h1",
+        "text": "Event Odds"
+      },
+      {
+        "level": "h1",
+        "text": "Event Odds"
+      },
+      {
+        "level": "h2",
+        "text": "HTTP Request"
+      },
+      {
+        "level": "h3",
+        "text": "URL Parameters"
+      },
+      {
+        "level": "h2",
+        "text": "HTTP Response"
+      },
+      {
+        "level": "h2",
+        "text": "Odds Markets"
+      },
+      {
+        "level": "h2",
+        "text": "Coverage"
+      },
+      {
+        "level": "h3",
+        "text": "Changes"
+      },
+      {
+        "level": "h4",
+        "text": "2019-01-08 /v2/"
+      },
+      {
+        "level": "h1",
+        "text": "results matching \"\""
+      },
+      {
+        "level": "h1",
+        "text": "No results matching \"\""
+      }
+    ]
+  }
+}

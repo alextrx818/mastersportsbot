@@ -1,0 +1,733 @@
+BetsAPI JSON Samples Summary
+=========================
+
+
+ended.json
+==========
+Size: 44.96 KB
+
+Content Preview:
+```json
+{
+  "success": 1,
+  "pager": {
+    "page": 1,
+    "per_page": 50,
+    "total": 1381633
+  },
+  "results": [
+    {
+      "id": "3950619",
+      "sport_id": "1",
+      "time": "1633269600",
+      "time_status": "5",
+      "league": {
+        "id": "69",
+        "name": "Spain Tercera Group 12",
+        "cc": "es"
+      },
+      "home": {
+        "id": "57728",
+...
+}
+```
+--------------------------------------------------------------------------------
+
+
+ended_events.json
+=================
+Size: 63.35 KB
+
+Content Preview:
+```json
+{
+  "success": 1,
+  "pager": {
+    "page": 1,
+    "per_page": 50,
+    "total": 1381633
+  },
+  "results": [
+    {
+      "id": "3950619",
+      "sport_id": "1",
+      "time": "1633269600",
+      "time_status": "5",
+      "league": {
+        "id": "69",
+        "name": "Spain Tercera Group 12",
+        "cc": "es"
+      },
+      "home": {
+        "id": "57728",
+...
+}
+```
+--------------------------------------------------------------------------------
+
+
+event_history.json
+==================
+Size: 15.57 KB
+
+Content Preview:
+```json
+{
+  "success": 1,
+  "results": {
+    "h2h": [
+      {
+        "id": "199439",
+        "sport_id": "1",
+        "league": {
+          "id": "849",
+          "name": "China Super League",
+          "cc": "cn"
+        },
+        "home": {
+          "id": "10121",
+          "name": "Liaoning Hongyun",
+          "image_id": "41429",
+          "cc": "cn"
+        },
+        "away": {
+          "id": "43806",
+...
+}
+```
+--------------------------------------------------------------------------------
+
+
+event_lineup.json
+=================
+Size: 11.85 KB
+
+Content Preview:
+```json
+{
+  "success": 1,
+  "results": {
+    "home": {
+      "formation": "4-3-3",
+      "startinglineup": [
+        {
+          "player": {
+            "id": "232422",
+            "name": "Kepa Arrizabalaga",
+            "cc": "es"
+          },
+          "shirtnumber": "1",
+          "pos": "Guard"
+        },
+        {
+          "player": {
+            "id": "21555",
+            "name": "Cesar Azpilicueta",
+            "cc": "es"
+...
+}
+```
+--------------------------------------------------------------------------------
+
+
+event_odds.json
+===============
+Size: 850.33 KB
+
+Content Preview:
+```json
+{
+  "success": 1,
+  "results": {
+    "stats": {
+      "matching_dir": 1,
+      "odds_update": {
+        "1_1": 1546802176,
+        "1_2": 1546802220,
+        "1_3": 1546802220,
+        "1_4": 1546802102,
+        "1_5": 1546798316,
+        "1_6": 1546798316,
+        "1_7": 1546798316,
+        "1_8": 1546798375
+      }
+    },
+    "odds": {
+      "1_1": [
+        {
+          "id": "28948880",
+...
+}
+```
+--------------------------------------------------------------------------------
+
+
+event_odds_summary.json
+=======================
+Size: 59.74 KB
+
+Content Preview:
+```json
+{
+  "success": 1,
+  "results": {
+    "Bet365": {
+      "matching_dir": 1,
+      "odds_update": {
+        "1_1": 1546938229,
+        "1_2": 1546938229,
+        "1_3": 1546938229,
+        "1_4": 1546938229,
+        "1_5": 1546938229,
+        "1_6": 1546938229,
+        "1_7": 1546938229,
+        "1_8": 1546938229
+      },
+      "odds": {
+        "start": {
+          "1_1": {
+            "id": "28952207",
+            "home_od": "2.050",
+...
+}
+```
+--------------------------------------------------------------------------------
+
+
+event_stats_trend.json
+======================
+Size: 97.00 KB
+
+Content Preview:
+```json
+{
+  "success": 1,
+  "results": {
+    "attacks": {
+      "away": [
+        {
+          "time_str": "0",
+          "val": "3"
+        },
+        {
+          "time_str": "1",
+          "val": "4"
+        },
+        {
+          "time_str": "2",
+          "val": "6"
+        },
+        {
+          "time_str": "3",
+          "val": "7"
+...
+}
+```
+--------------------------------------------------------------------------------
+
+
+event_view.json
+===============
+Size: 14.32 KB
+
+Content Preview:
+```json
+{
+  "success": 1,
+  "results": [
+    {
+      "id": "2654397",
+      "sport_id": "1",
+      "time": "1602952200",
+      "time_status": "3",
+      "league": {
+        "id": "94",
+        "name": "England Premier League",
+        "cc": "gb"
+      },
+      "home": {
+        "id": "708",
+        "name": "Man City",
+        "image_id": "17",
+        "cc": "gb"
+      },
+      "away": {
+...
+}
+```
+--------------------------------------------------------------------------------
+
+
+events_search.json
+==================
+Size: 0.86 KB
+
+Content Preview:
+```json
+{
+  "success": 1,
+  "results": [
+    {
+      "id": "222577",
+      "time": "1489672775",
+      "time_status": "1",
+      "league": {
+        "id": "363",
+        "name": "Europe Friendlies",
+        "cc": "eu"
+      },
+      "home": {
+        "id": "9844",
+        "name": "Aalesund",
+        "image_id": "677",
+        "cc": "no"
+      },
+      "away": {
+        "id": "1154",
+...
+}
+```
+--------------------------------------------------------------------------------
+
+
+inplay.json
+===========
+Size: 432.90 KB
+
+Content Preview:
+```json
+{
+  "success": 1,
+  "pager": {
+    "page": 1,
+    "per_page": 1000,
+    "total": 267
+  },
+  "results": [
+    {
+      "id": "4140581",
+      "sport_id": "1",
+      "time": "1633179600",
+      "time_status": "1",
+      "league": {
+        "id": "825",
+        "name": "Tunisia League 1",
+        "cc": "tn"
+      },
+      "home": {
+        "id": "47374",
+...
+}
+```
+--------------------------------------------------------------------------------
+
+
+inplay_events.json
+==================
+Size: 635.02 KB
+
+Content Preview:
+```json
+{
+  "success": 1,
+  "pager": {
+    "page": 1,
+    "per_page": 1000,
+    "total": 267
+  },
+  "results": [
+    {
+      "id": "4140581",
+      "sport_id": "1",
+      "time": "1633179600",
+      "time_status": "1",
+      "league": {
+        "id": "825",
+        "name": "Tunisia League 1",
+        "cc": "tn"
+      },
+      "home": {
+        "id": "47374",
+...
+}
+```
+--------------------------------------------------------------------------------
+
+
+league.json
+===========
+Size: 17.55 KB
+
+Content Preview:
+```json
+{
+  "success": 1,
+  "pager": {
+    "page": 1,
+    "per_page": 100,
+    "total": 1665
+  },
+  "results": [
+    {
+      "id": "1",
+      "name": "Mexico Liga de Ascenso Apertura",
+      "cc": "mx",
+      "has_leaguetable": 1,
+      "has_toplist": 0
+    },
+    {
+      "id": "2",
+      "name": "Australia New South Wales League 2",
+      "cc": "au",
+      "has_leaguetable": 0,
+...
+}
+```
+--------------------------------------------------------------------------------
+
+
+league_table.json
+=================
+Size: 57.55 KB
+
+Content Preview:
+```json
+{
+  "success": 1,
+  "results": [
+    {
+      "season": {
+        "sport_id": "1",
+        "start_time": "1659657600",
+        "end_time": "1685318399",
+        "has_topgoals": "1",
+        "has_leaguetable": "1",
+        "has_lineups": "1",
+        "name": "Premier League 22/23"
+      },
+      "overall": {
+        "tables": [
+          {
+            "name": "Premier League",
+            "groupname": null,
+            "currentround": "31",
+            "maxrounds": "38",
+...
+}
+```
+--------------------------------------------------------------------------------
+
+
+league_toplist.json
+===================
+Size: 447.47 KB
+
+Content Preview:
+```json
+{
+  "success": 1,
+  "results": {
+    "topgoals": [
+      {
+        "goal_points": "37",
+        "goals": "28",
+        "penalties": "1",
+        "matches": "30",
+        "minutes_played": "2393",
+        "substituted_in": "2",
+        "player": {
+          "id": "159665",
+          "name": "Mohamed Salah",
+          "cc": "eg"
+        },
+        "team": {
+          "id": "23451",
+          "name": "Liverpool",
+          "image_id": "44",
+...
+}
+```
+--------------------------------------------------------------------------------
+
+
+merge_history.json
+==================
+Size: 12.24 KB
+
+Content Preview:
+```json
+{
+  "success": 1,
+  "pager": {
+    "page": 1,
+    "per_page": 100,
+    "total": 23467
+  },
+  "results": [
+    {
+      "from_id": "887111",
+      "to_id": "887142",
+      "created_at": "1534817422"
+    },
+    {
+      "from_id": "862026",
+      "to_id": "886849",
+      "created_at": "1534817422"
+    },
+    {
+      "from_id": "887112",
+...
+}
+```
+--------------------------------------------------------------------------------
+
+
+player.json
+===========
+Size: 16.44 KB
+
+Content Preview:
+```json
+{
+  "success": 1,
+  "results": {
+    "player": {
+      "id": "750",
+      "name": "Cristiano Ronaldo",
+      "cc": "pt",
+      "birthdate": "1985-02-05",
+      "position": "Forward",
+      "height": "185",
+      "weight": "80",
+      "foot": "Both"
+    },
+    "transfers": [
+      {
+        "start": "0",
+        "end": "0",
+        "type_id": "1",
+        "active": "1",
+        "team": {
+...
+}
+```
+--------------------------------------------------------------------------------
+
+
+search.json
+===========
+Size: 0.63 KB
+
+Content Preview:
+```json
+{
+  "success": 1,
+  "results": [
+    {
+      "id": "222577",
+      "time": "1489672775",
+      "time_status": "1",
+      "league": {
+        "id": "363",
+        "name": "Europe Friendlies",
+        "cc": "eu"
+      },
+      "home": {
+        "id": "9844",
+        "name": "Aalesund",
+        "image_id": "677",
+        "cc": "no"
+      },
+      "away": {
+        "id": "1154",
+...
+}
+```
+--------------------------------------------------------------------------------
+
+
+team.json
+=========
+Size: 14.98 KB
+
+Content Preview:
+```json
+{
+  "success": 1,
+  "pager": {
+    "page": 1,
+    "per_page": 100,
+    "total": 29084
+  },
+  "results": [
+    {
+      "id": "1",
+      "name": "Dorados",
+      "cc": "mx",
+      "image_id": "5291",
+      "has_squad": 1
+    },
+    {
+      "id": "2",
+      "name": "Coras Tepic",
+      "cc": "mx",
+      "image_id": "159944",
+...
+}
+```
+--------------------------------------------------------------------------------
+
+
+team_members.json
+=================
+Size: 0.33 KB
+
+Content Preview:
+```json
+{
+  "success": 1,
+  "results": [
+    {
+      "id": "189876",
+      "name": "Joao Lucas Reis da Silva",
+      "image_id": 0,
+      "cc": "br"
+    },
+    {
+      "id": "189740",
+      "name": "Matheus P De Almeida",
+      "image_id": 0,
+      "cc": "br"
+    }
+  ]
+}
+```
+--------------------------------------------------------------------------------
+
+
+team_squad.json
+===============
+Size: 8.88 KB
+
+Content Preview:
+```json
+{
+  "success": 1,
+  "results": [
+    {
+      "id": "6019",
+      "name": "Vincent Kompany",
+      "cc": "be",
+      "birthdate": "1986-04-09",
+      "position": "Defender",
+      "height": "193",
+      "weight": "85",
+      "foot": "Right",
+      "shirtnumber": "4"
+    },
+    {
+      "id": "11781",
+      "name": "David Silva",
+      "cc": "es",
+      "birthdate": "1986-01-07",
+      "position": "Midfielder",
+...
+}
+```
+--------------------------------------------------------------------------------
+
+
+tennis_ranking.json
+===================
+Size: 98.36 KB
+
+Content Preview:
+```json
+{
+  "success": 1,
+  "results": [
+    {
+      "id": "4140",
+      "name": "Rafael Nadal",
+      "cc": "es",
+      "country": "Spain",
+      "ranking": "1",
+      "points": "9310"
+    },
+    {
+      "id": "70618",
+      "name": "Roger Federer",
+      "cc": "ch",
+      "country": "Switzerland",
+      "ranking": "2",
+      "points": "7080"
+    },
+    {
+...
+}
+```
+--------------------------------------------------------------------------------
+
+
+upcoming.json
+=============
+Size: 25.79 KB
+
+Content Preview:
+```json
+{
+  "success": 1,
+  "pager": {
+    "page": 1,
+    "per_page": 50,
+    "total": 47764
+  },
+  "results": [
+    {
+      "id": "3915866",
+      "sport_id": "1",
+      "time": "1633184100",
+      "time_status": "0",
+      "league": {
+        "id": "521",
+        "name": "Belgium Super League Women",
+        "cc": "be"
+      },
+      "home": {
+        "id": "240427",
+...
+}
+```
+--------------------------------------------------------------------------------
+
+
+upcoming_events.json
+====================
+Size: 34.04 KB
+
+Content Preview:
+```json
+{
+  "success": 1,
+  "pager": {
+    "page": 1,
+    "per_page": 50,
+    "total": 47764
+  },
+  "results": [
+    {
+      "id": "3915866",
+      "sport_id": "1",
+      "time": "1633184100",
+      "time_status": "0",
+      "league": {
+        "id": "521",
+        "name": "Belgium Super League Women",
+        "cc": "be"
+      },
+      "home": {
+        "id": "240427",
+...
+}
+```
+--------------------------------------------------------------------------------

@@ -1,0 +1,227 @@
+openapi: 3.0.0
+info:
+  title: Bet365 API Integration
+  description: API documentation specifically for Bet365 endpoints via BetsAPI
+  version: 1.0.0
+servers:
+  - url: https://api.b365api.com
+    description: BetsAPI Production Server
+
+components:
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: query
+      name: token
+      description: BetsAPI token required for authentication
+  
+  schemas:
+    Error:
+      type: object
+      properties:
+        success:
+          type: integer
+          enum: [0]
+        error:
+          type: string
+          description: Error message
+
+    Bet365Odds:
+      type: object
+      properties:
+        id:
+          type: string
+          description: Odds ID
+        home_od:
+          type: string
+          description: Home team odds
+        draw_od:
+          type: string
+          description: Draw odds (for applicable sports)
+        away_od:
+          type: string
+          description: Away team odds
+        ss:
+          type: string
+          description: Current score when odds were recorded
+        time_str:
+          type: string
+          description: Match time when odds were recorded
+        add_time:
+          type: string
+          description: Timestamp when odds were added
+
+    Bet365Match:
+      type: object
+      properties:
+        id:
+          type: string
+          description: Bet365 match ID
+        sport_id:
+          type: string
+          description: Sport ID (1=Soccer, 18=Basketball, 91=Volleyball)
+        league:
+          type: object
+          properties:
+            id:
+              type: string
+              description: Bet365 league ID
+            name:
+              type: string
+              description: League name
+        home:
+          type: object
+          properties:
+            id:
+              type: string
+              description: Bet365 team ID
+            name:
+              type: string
+              description: Team name
+        away:
+          type: object
+          properties:
+            id:
+              type: string
+              description: Bet365 team ID
+            name:
+              type: string
+              description: Team name
+        ss:
+          type: string
+          description: Current score
+        timer:
+          type: object
+          properties:
+            tm:
+              type: integer
+              description: Current minute of the game
+            ts:
+              type: integer
+              description: Current second of the minute
+        odds:
+          $ref: '#/components/schemas/Bet365Odds'
+
+paths:
+  /v3/bet365/inplay:
+    get:
+      summary: Get Bet365 In-Play Events
+      description: Retrieve all currently live events from Bet365
+      security:
+        - ApiKeyAuth: []
+      parameters:
+        - name: sport_id
+          in: query
+          description: ID of the sport (1=Soccer, 18=Basketball, 91=Volleyball)
+          required: false
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: integer
+                    enum: [1]
+                  results:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Bet365Match'
+
+  /v3/bet365/prematch:
+    get:
+      summary: Get Bet365 Pre-match Events
+      description: Retrieve upcoming events from Bet365
+      security:
+        - ApiKeyAuth: []
+      parameters:
+        - name: sport_id
+          in: query
+          description: ID of the sport (1=Soccer, 18=Basketball, 91=Volleyball)
+          required: false
+          schema:
+            type: integer
+        - name: league_id
+          in: query
+          description: Bet365 league ID
+          required: false
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: integer
+                    enum: [1]
+                  results:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Bet365Match'
+
+  /v3/bet365/event:
+    get:
+      summary: Get Bet365 Event Details
+      description: Get detailed information about a specific Bet365 event
+      security:
+        - ApiKeyAuth: []
+      parameters:
+        - name: FI
+          in: query
+          description: Bet365 Event ID (FI)
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: integer
+                    enum: [1]
+                  results:
+                    $ref: '#/components/schemas/Bet365Match'
+
+  /v3/bet365/event/odds:
+    get:
+      summary: Get Bet365 Event Odds History
+      description: Get odds history for a specific Bet365 event
+      security:
+        - ApiKeyAuth: []
+      parameters:
+        - name: FI
+          in: query
+          description: Bet365 Event ID (FI)
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: integer
+                    enum: [1]
+                  results:
+                    type: object
+                    properties:
+                      odds:
+                        type: array
+                        items:
+                          $ref: '#/components/schemas/Bet365Odds'

@@ -1,0 +1,131 @@
+{
+  "query": "\n    Analyze the BetsAPI documentation for prematch odds and provide:\n    1. The exact endpoint and parameters for soccer prematch odds\n    2. A complete Python code example showing:\n       - How to make the API request\n       - How to parse and display the odds\n       - Error handling\n       - Example output format\n    3. Any important implementation notes or best practices\n    \n    Please format the code example in a way that it can be directly used in our tests/test_odds_prematch.py file.\n    Include proper imports, class structure, and main execution block.\n    ",
+  "findings": [
+    {
+      "type": "h1",
+      "text": "Introduction",
+      "url": "https://betsapi.com/docs/",
+      "details": "BetsAPI is a RESTful service for data on all sports. It is a PAID service with low price (started with $10 per month)."
+    },
+    {
+      "type": "h1",
+      "text": "Introduction",
+      "url": "https://betsapi.com/docs/",
+      "details": "BetsAPI is a RESTful service for data on all sports. It is a PAID service with low price (started with $10 per month)."
+    },
+    {
+      "type": "h2",
+      "text": "Authentication",
+      "url": "https://betsapi.com/docs/",
+      "details": "To authorize, use this code:\nMake sure replace YOUR-TOKEN with your real token."
+    },
+    {
+      "type": "pre",
+      "text": "curl \"api_endpoint_here?token=YOUR-TOKEN\"",
+      "url": "https://betsapi.com/docs/",
+      "details": "You will get a token from our support or Orders page. you should pass it as token= in GET query."
+    },
+    {
+      "type": "h2",
+      "text": "API Endpoints",
+      "url": "https://betsapi.com/docs/",
+      "details": "API endpoint is started with https://api.b365api.com/"
+    },
+    {
+      "type": "h2",
+      "text": "Rate Limatation",
+      "url": "https://betsapi.com/docs/",
+      "details": "X-RateLimit-Limit:3600\nX-RateLimit-Remaining:3599\nX-RateLimit-Reset:1495857600"
+    },
+    {
+      "type": "pre",
+      "text": "X-RateLimit-Limit:3600\nX-RateLimit-Remaining:3599\nX-RateLimit-Reset:1495857600",
+      "url": "https://betsapi.com/docs/",
+      "details": "3600 requests per hour."
+    },
+    {
+      "type": "h1",
+      "text": "results matching \"\"",
+      "url": "https://betsapi.com/docs/"
+    },
+    {
+      "type": "h1",
+      "text": "No results matching \"\"",
+      "url": "https://betsapi.com/docs/"
+    },
+    {
+      "type": "h1",
+      "text": "Summary",
+      "url": "https://betsapi.com/docs/events/index.html",
+      "details": "Events API is aggregated from Bet365 (main source) and others. It keeps history data (since Sep 2016)."
+    },
+    {
+      "type": "h1",
+      "text": "Events API Summary",
+      "url": "https://betsapi.com/docs/events/index.html",
+      "details": "Events API is aggregated from Bet365 (main source) and others. It keeps history data (since Sep 2016)."
+    },
+    {
+      "type": "h2",
+      "text": "Introduction",
+      "url": "https://betsapi.com/docs/events/index.html",
+      "details": "Events API is aggregated from Bet365 (main source) and others. It keeps history data (since Sep 2016)."
+    },
+    {
+      "type": "h3",
+      "text": "Difference with other APIs",
+      "url": "https://betsapi.com/docs/events/index.html",
+      "details": "It only include 1-3 main markets for each sports. If you need all odds markets, you should use Bet365/Bwin/Betfair API instead."
+    },
+    {
+      "type": "h1",
+      "text": "results matching \"\"",
+      "url": "https://betsapi.com/docs/events/index.html"
+    },
+    {
+      "type": "h1",
+      "text": "No results matching \"\"",
+      "url": "https://betsapi.com/docs/events/index.html"
+    },
+    {
+      "type": "h1",
+      "text": "Bet365 Summary",
+      "url": "https://betsapi.com/docs/bet365/index.html",
+      "details": "It covers all markets/odds (expect Outrights and Bet Builder odds) that you can find in Bet365 website."
+    },
+    {
+      "type": "h1",
+      "text": "Bet365 Summary",
+      "url": "https://betsapi.com/docs/bet365/index.html",
+      "details": "It covers all markets/odds (expect Outrights and Bet Builder odds) that you can find in Bet365 website."
+    },
+    {
+      "type": "h2",
+      "text": "Introduction",
+      "url": "https://betsapi.com/docs/bet365/index.html",
+      "details": "It covers all markets/odds (expect Outrights and Bet Builder odds) that you can find in Bet365 website."
+    },
+    {
+      "type": "h3",
+      "text": "InPlay",
+      "url": "https://betsapi.com/docs/bet365/index.html",
+      "details": "use Bet365 InPlay ID (type=EV) or Bet365 InPlay Filter id."
+    },
+    {
+      "type": "h3",
+      "text": "Prematch",
+      "url": "https://betsapi.com/docs/bet365/index.html",
+      "details": "use Bet365 Upcoming Events to get the id (which is FI)"
+    },
+    {
+      "type": "h1",
+      "text": "results matching \"\"",
+      "url": "https://betsapi.com/docs/bet365/index.html"
+    },
+    {
+      "type": "h1",
+      "text": "No results matching \"\"",
+      "url": "https://betsapi.com/docs/bet365/index.html"
+    }
+  ]
+}

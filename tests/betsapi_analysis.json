@@ -1,0 +1,95 @@
+{
+  "live_events": {
+    "query": "Find all endpoints related to live events and in-play betting",
+    "findings": [
+      {
+        "type": "pre",
+        "text": "curl \"api_endpoint_here?token=YOUR-TOKEN\"",
+        "url": "https://betsapi.com/docs/",
+        "details": "You will get a token from our support or Orders page. you should pass it as token= in GET query."
+      },
+      {
+        "type": "h2",
+        "text": "API Endpoints",
+        "url": "https://betsapi.com/docs/",
+        "details": "API endpoint is started with https://api.b365api.com/"
+      },
+      {
+        "type": "h1",
+        "text": "Events API Summary",
+        "url": "https://betsapi.com/docs/events/index.html",
+        "details": "Events API is aggregated from Bet365 (main source) and others. It keeps history data (since Sep 2016)."
+      }
+    ]
+  },
+  "prematch_odds": {
+    "query": "Find all endpoints related to prematch odds and upcoming events",
+    "findings": [
+      {
+        "type": "pre",
+        "text": "curl \"api_endpoint_here?token=YOUR-TOKEN\"",
+        "url": "https://betsapi.com/docs/",
+        "details": "You will get a token from our support or Orders page. you should pass it as token= in GET query."
+      },
+      {
+        "type": "h2",
+        "text": "API Endpoints",
+        "url": "https://betsapi.com/docs/",
+        "details": "API endpoint is started with https://api.b365api.com/"
+      },
+      {
+        "type": "h1",
+        "text": "Events API Summary",
+        "url": "https://betsapi.com/docs/events/index.html",
+        "details": "Events API is aggregated from Bet365 (main source) and others. It keeps history data (since Sep 2016)."
+      },
+      {
+        "type": "h3",
+        "text": "Prematch",
+        "url": "https://betsapi.com/docs/bet365/index.html",
+        "details": "use Bet365 Upcoming Events to get the id (which is FI)"
+      }
+    ]
+  },
+  "authentication": {
+    "query": "Find all information about authentication, API tokens, and rate limits",
+    "findings": [
+      {
+        "type": "pre",
+        "text": "curl \"api_endpoint_here?token=YOUR-TOKEN\"",
+        "url": "https://betsapi.com/docs/",
+        "details": "You will get a token from our support or Orders page. you should pass it as token= in GET query."
+      },
+      {
+        "type": "h2",
+        "text": "API Endpoints",
+        "url": "https://betsapi.com/docs/",
+        "details": "API endpoint is started with https://api.b365api.com/"
+      },
+      {
+        "type": "h2",
+        "text": "Rate Limatation",
+        "url": "https://betsapi.com/docs/",
+        "details": "X-RateLimit-Limit:3600\nX-RateLimit-Remaining:3599\nX-RateLimit-Reset:1495857600"
+      },
+      {
+        "type": "pre",
+        "text": "X-RateLimit-Limit:3600\nX-RateLimit-Remaining:3599\nX-RateLimit-Reset:1495857600",
+        "url": "https://betsapi.com/docs/",
+        "details": "3600 requests per hour."
+      },
+      {
+        "type": "h1",
+        "text": "Events API Summary",
+        "url": "https://betsapi.com/docs/events/index.html",
+        "details": "Events API is aggregated from Bet365 (main source) and others. It keeps history data (since Sep 2016)."
+      },
+      {
+        "type": "h3",
+        "text": "Difference with other APIs",
+        "url": "https://betsapi.com/docs/events/index.html",
+        "details": "It only include 1-3 main markets for each sports. If you need all odds markets, you should use Bet365/Bwin/Betfair API instead."
+      }
+    ]
+  }
+}
